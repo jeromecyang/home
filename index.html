@@ -12,14 +12,25 @@
         /*background-color: #ddd;*/
         font-family: Segoe UI;
       }
+      .header {
+        font-size: 48px;
+      }
     </style>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+        console.log("blah");
+        $("#content").append($("<div>").html("enjfrn"));
+      });
+    </script>
   </head>
   <body>
     <div id="main">
-      <h1>Jerome Yang</h1>
+      <div class="header">Jerome Yang</div>
       <div>jeromecyang@gmail.com</div>
       <div>http://jeromecyang.github.io/home/</div>
       <div>Product Engineer (ArcGIS.com and JavaScript API), Esri Inc.</div>
+      <div id="content"></div>
     </div>
   </body>
 </html>
