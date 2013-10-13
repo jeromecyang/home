@@ -22,7 +22,7 @@
         console.log("blah");
         $("#content").append($("<div>").html("enjfrn"));
         
-        $.getJSON("http://api.metro.net/agencies/lametro/routes/901/stops/", function(data){
+        $.getJSON("data.json", function(data){
           console.log(data);
         });
       });
