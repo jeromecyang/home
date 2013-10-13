@@ -2,28 +2,24 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=7, IE=9, IE=10">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
-    <title>Simple Map</title>
-    <link rel="stylesheet" href="http://js.arcgis.com/3.7/js/esri/css/esri.css">
+    <title>Jerome Yang</title>
     <style>
-      html, body, #map {
-        height: 100%;
-        margin: 0;
+      #main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px;
+        /*background-color: #ddd;*/
+        font-family: Segoe UI;
       }
     </style>
-    <script src="http://js.arcgis.com/3.7/"></script>
-    <script>
-      require(["esri/map", "dojo/domReady!"], function(Map) {
-        var map = new Map("map", {
-          basemap: "topo",
-          center: [-122.45,37.75],
-          zoom: 13,
-        });
-      });
-    </script>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="main">
+      <h1>Jerome Yang</h1>
+      <div>jeromecyang@gmail.com</div>
+      <div>http://jeromecyang.github.io/home/</div>
+      <div>Product Engineer (ArcGIS.com and JavaScript API), Esri Inc.</div>
+    </div>
   </body>
 </html>
