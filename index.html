@@ -18,9 +18,13 @@
     </style>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>
-      $( document ).ready(function() {
+      $(document).ready(function() {
         console.log("blah");
         $("#content").append($("<div>").html("enjfrn"));
+        
+        $.getJSON("http://api.metro.net/agencies/lametro/routes/901/stops/", function(data){
+          console.log(data);
+        });
       });
     </script>
   </head>
