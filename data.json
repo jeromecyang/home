@@ -2,6 +2,129 @@
   "about": {
     "description": "blahblahblah"
   },
-  "portfolio": {},
-  "resume": {},
+  "portfolio": "djkc",
+  "resume": {
+    "education": [
+      {
+        "school": "Clark University",
+        "location": "Worcester, MA",
+        "time": "2010-2012",
+        "degree": "Master of Science",
+        "major": "Geographic Information Science for Development and Environment",
+        "gpa": "4.03/4.00"
+      },
+      {
+        "school": "National Taiwan University",
+        "location": "Taipei, Taiwan",
+        "time": "2005-2009",
+        "degree": "Bachelor of Science",
+        "major": "Geography (with a minor in sociology)",
+        "gpa": "3.96/4.00"
+      }
+    ],
+    "profession": [
+      {
+        "organization": "Esri Inc.",
+        "position": "Product Engineer",
+        "location": "Redlands, CA",
+        "time": "2012-present",
+        "description": [
+          "ArcGIS API for JavaScript, ArcGIS.com"
+        ]
+      },
+      {
+        "organization": "Esri Inc.",
+        "position": "Intern",
+        "location": "Redlands, CA",
+        "time": "2012",
+        "description": [
+          "Participated in the development and testing of ArcGIS API for JavaScript 3.0.",
+          "Tested and improved code samples and map app template on ArcGIS Online."
+        ]
+      },
+      {
+        "organization": "Center for Geographic Analysis, Harvard University",
+        "position": "GIS Analyst",
+        "location": "Cambridge, MA",
+        "time": "2011-2012",
+        "description": [
+          "Visualized world demographic and religious data on the WorldMap web mapping platform.",
+          "Automating the process of parsing and integrating data from multiple sources using Python script."
+        ]
+      },
+      {
+        "organization": "Maine Department of Marine Resources",
+        "position": "GIS Technician",
+        "location": "Boothbay Harbor, ME",
+        "time": "2011",
+        "description": [
+          "Used Trimble GeoExplorer 2008 and ArcPad 10.0 to validate the accuracy of seagrass maps (ground truth work).",
+          "Developed an API-based web map application for the Maine Marine Patrol officers to report the locations of young eel harvesting activities online.",
+          "Managed governmental spatial data of the government among multiple File Geodatabase (FGDB) and ArcSDE data servers."
+        ]
+      },
+      {
+        "organization": "National Children's Study",
+        "position": "Research Assistant",
+        "location": "Worcester, MA",
+        "time": "2011",
+        "description": [
+          "Visualized statistics (US Census and American Community Survey) and established spatial database for study area.",
+          "Integrated GPS tracker, Garmin application, and Google Earth to provide dynamic map for field investigation."
+        ]
+      },
+      {
+        "organization": "GISDE Lab., Clark University",
+        "position": "GIS Lab Manager",
+        "location": "Worcester, MA",
+        "time": "2011",
+        "description": [
+          "Provided technical support (desktop, printer, and GIS software) for 40 master's students.",
+          "Collected and updated the information of GIS conferences, jobs, and resources; sustained a GIS resource website."
+        ]
+      },
+      {
+        "organization": "Map and Multimedia Lab., National Taiwan University",
+        "position": "Cartographer and Map Editor",
+        "location": "Taipei, Taiwan",
+        "time": "2008-2009",
+        "description": [
+          "Illustrated and edited maps for an annual map calendar (print volume: 3,000) to promote geographical education.",
+          "Displayed data on maps for conference posters and a textbook by ArcGIS 9.2 and Adobe Illustrator CS3."
+        ]
+      }
+    ],
+    "honor": [
+      {
+        "name": "Geller Student Research Award",
+        "organization": "Marsh Institute, Clark University",
+        "time": "2011",
+        "note": "USD 2250.00"
+      },
+      {
+        "name": "Student Paper Award 1st Prize",
+        "organization": "New England-Saint Lawrence Valley Geographical Society",
+        "time": "2011",
+        "note": ""
+      },
+      {
+        "name": "IDCE Department Fellowship",
+        "organization": "Clark University",
+        "time": "2010",
+        "note": "50% tuition remission"
+      },
+      {
+        "name": "Presidential Award",
+        "organization": "National Taiwan University",
+        "time": "2006, 2007, 2008, 2009",
+        "note": "Top 5% in department"
+      },
+      {
+        "name": "Dean's Award",
+        "organization": "National Taiwan University",
+        "time": "2009",
+        "note": "Top 10% in graduating class"
+      }
+    ]
+  }
 }

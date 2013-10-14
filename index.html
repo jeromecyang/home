@@ -6,24 +6,60 @@
     <title>Jerome Yang</title>
     <style>
       #main {
-        margin-left: auto;
-        margin-right: auto;
         width: 960px;
-        /*background-color: #ddd;*/
-        font-family: Segoe UI;
+        margin: 0 auto 0 auto;
       }
       .header {
+        font-size: 54px;
+        font-family: Segoe UI;
+      }
+      .title-1 {
         font-size: 48px;
+        font-family: Segoe UI Light;
+        margin: 24px 0 0 0;
+      }
+      .title-2 {
+        font-size: 28px;
+        font-family: Segoe UI Semibold;
+        margin: 18px 0 0 0;
+      }
+      .instance {
+        font-family: Segoe UI;
+        margin: 10px 0 10px 0;
       }
     </style>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>
       $(document).ready(function() {
-        console.log("blah");
-        $("#content").append($("<div>").html("enjfrn"));
+        //$("#content").append($("<div>").html("enjfrn"));
         
         $.getJSON("data.json", function(data){
-          console.log(data);
+          $.each(data.resume.education, function(index, item){
+            var instance = $("<div>", { class: "instance" });
+            instance.append($("<div>").html(item.degree + " in " + item.major));
+            instance.append($("<div>").html(([item.school, item.location, item.time]).join(", ")));
+            instance.append($("<div>").html("GPA: " + item.gpa));
+            $("#education").append(instance);
+          });
+          
+          $.each(data.resume.profession, function(index, item){
+            var instance = $("<div>", { class: "instance" });
+            instance.append($("<div>").html(item.position + ", " + item.organization));
+            instance.append($("<div>").html(([item.location, item.time]).join(", ")));
+            var desc = $("<ul>");
+            $.each(item.description, function(index, line){
+              desc.append($("<li>").html(line));
+            });
+            instance.append(desc);
+            $("#profession").append(instance);
+          });
+
+          $.each(data.resume.honor, function(index, item){
+            var instance = $("<div>", { class: "instance" });
+            instance.append($("<div>").html(item.name + " " + item.note));
+            instance.append($("<div>").html(([item.organization, item.time]).join(", ")));
+            $("#honor").append(instance);
+          });
         });
       });
     </script>
@@ -31,10 +67,19 @@
   <body>
     <div id="main">
       <div class="header">Jerome Yang</div>
-      <div>jeromecyang@gmail.com</div>
-      <div>http://jeromecyang.github.io/home/</div>
-      <div>Product Engineer (ArcGIS.com and JavaScript API), Esri Inc.</div>
-      <div id="content"></div>
+      <div>jeromecyang[at]gmail.com | http://jeromecyang.github.io/home/</div>
+      <div><a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#resume">Resume/CV</a></div>
+      <a id="about"><div class="title-1">About</div></a>
+      <a id="portfolio"><div class="title-1">Portfolio</div></a>
+      <a id="resume"><div class="title-1">Resume/CV</div></a>
+      <div>
+        <div class="title-2">Education</div>
+        <div id="education"></div>
+        <div class="title-2">Professional Experience</div>
+        <div id="profession"></div>
+        <div class="title-2">Awards and Honors</div>
+        <div id="honor"></div>
+      </div>
     </div>
   </body>
 </html>
