@@ -31,9 +31,15 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>
       $(document).ready(function() {
-        //$("#content").append($("<div>").html("enjfrn"));
-        
         $.getJSON("data.json", function(data){
+          $.each(data.portfolio, function(index, item){
+            $("#portfolio-content").append($("<div>", { class: "title-2" }).html(item.title));
+            var instance = $("<div>", { class: "instance" });
+            instance.append($("<div>").html(item.type));
+            instance.append($("<div>").html(item.description));
+            $("#portfolio-content").append(instance);
+          });
+        
           $.each(data.resume.education, function(index, item){
             var instance = $("<div>", { class: "instance" });
             instance.append($("<div>").html(item.degree + " in " + item.major));
@@ -71,6 +77,7 @@
       <div><a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#resume">Resume/CV</a></div>
       <a id="about"><div class="title-1">About</div></a>
       <a id="portfolio"><div class="title-1">Portfolio</div></a>
+      <div id="portfolio-content"></div>
       <a id="resume"><div class="title-1">Resume/CV</div></a>
       <div>
         <div class="title-2">Education</div>

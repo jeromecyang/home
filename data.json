@@ -2,7 +2,38 @@
   "about": {
     "description": "blahblahblah"
   },
-  "portfolio": "djkc",
+  "portfolio": [
+    {
+      "title": "From Scratch: Central Massachusetts Pollutants Mapping",
+      "type": "Visualization",
+      "description": ""
+    },
+    {
+      "title": "AfricaMap",
+      "type": "Web Map",
+      "description": ""
+    },
+    {
+      "title": "GIS off the Shore: Eelgrass Mapping",
+      "type": "Visualization",
+      "description": ""
+    },
+    {
+      "title": "Web GIS Crowd-sourcing",
+      "type": "Web Map",
+      "description": ""
+    },
+    {
+      "title": "When Something is Built",
+      "type": "Visualization",
+      "description": "This series of maps was produced to simulate the landscapes after highways, dams "
+    },
+    {
+      "title": "\"Bridge\" the Green Gap",
+      "type": "Landscape Design",
+      "description": ""
+    }
+  ],
   "resume": {
     "education": [
       {
