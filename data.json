@@ -21,7 +21,7 @@
     {
       "title": "Web GIS Crowd-sourcing",
       "type": "Web Map",
-      "description": ""
+      "description": "Internet provides an effective way for multiple people to contribute geospatial data to one database. I participated in two crowd-sourcing GIS projects. <b>Maine Elver Map</b> was designed for marine patrol officers to report locations where illegal harvesting of elvers (young eels) were found. It successfully gathered 85 locations reported by about 10 officers. It employed Google Maps API and Google Fusion Table to provide a user interface and a publicly accessible database. Any input data was immediately reviewed by administrators via email to ensure the quality of the data. <b>QianTang River Map</b> was built to gather succeptible water pollution activities along the river. This project was initiated by Green Zhejiang, an environmental protection NGO in China. I worked as the primary technical lead to implement the system. Built upon Ushahidi's CrowdMap platform, it leverages open-source tools to provide a zero-cost and easy-to-use solution to the NGO's need for crowd-sourcing."
     },
     {
       "title": "When Something is Built",
@@ -60,7 +60,8 @@
         "location": "Redlands, CA",
         "time": "2012-present",
         "description": [
-          "ArcGIS API for JavaScript, ArcGIS.com"
+          "Developed and tested ArcGIS API for JavaScript (v3.1 - v3.8), ArcGIS.com.",
+          "Prototyped and documented JavaScript applications for ArcGIS users."
         ]
       },
       {
@@ -69,8 +70,7 @@
         "location": "Redlands, CA",
         "time": "2012",
         "description": [
-          "Participated in the development and testing of ArcGIS API for JavaScript 3.0.",
-          "Tested and improved code samples and map app template on ArcGIS Online."
+          "Tested ArcGIS API for JavaScript v3.0 and ArcGIS.com."
         ]
       },
       {
@@ -89,7 +89,7 @@
         "location": "Boothbay Harbor, ME",
         "time": "2011",
         "description": [
-          "Used Trimble GeoExplorer 2008 and ArcPad 10.0 to validate the accuracy of seagrass maps (ground truth work).",
+          "Used Trimble GeoExplorer 2008 and ArcPad 10.0 to validate the accuracy of seagrass maps (groundtruthing).",
           "Developed an API-based web map application for the Maine Marine Patrol officers to report the locations of young eel harvesting activities online.",
           "Managed governmental spatial data of the government among multiple File Geodatabase (FGDB) and ArcSDE data servers."
         ]
@@ -155,6 +155,43 @@
         "organization": "National Taiwan University",
         "time": "2009",
         "note": "Top 10% in graduating class"
+      }
+    ],
+    "presentation": [
+      {
+        "presentors": "Xin, Hao and Yang, Chia-Rung",
+        "title": "",
+        "time": "",
+        "event": "",
+        "location": ""
+      },
+      {
+        "presentors": "",
+        "title": "",
+        "time": "",
+        "event": "",
+        "location": ""
+      },
+      {
+        "presentors": "",
+        "title": "",
+        "time": "",
+        "event": "",
+        "location": ""
+      },
+      {
+        "presentors": "",
+        "title": "",
+        "time": "",
+        "event": "",
+        "location": ""
+      },
+      {
+        "presentors": "",
+        "title": "",
+        "time": "",
+        "event": "",
+        "location": ""
       }
     ]
   }
