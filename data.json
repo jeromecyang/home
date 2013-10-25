@@ -4,19 +4,19 @@
   },
   "portfolio": [
     {
-      "title": "From Scratch: Central Massachusetts Pollutants Mapping",
+      "title": "Map from Scratch: Central Massachusetts Air Pollutants Mapping",
       "type": "Visualization",
       "description": ""
     },
     {
       "title": "AfricaMap",
       "type": "Web Map",
-      "description": ""
+      "description": "AfricaMap is an open-source web mapping platform designated for archiving, visualizing and integrating geospatial statistics particularly for Africa. One can easily find statistics from various organizations and governments, but how do we fit them together in one single platform? As a GIS analyst at Center for Geographic Analysis (CGA), Harvard University, I worked with Prof. Suzanne Blier to retrieve statistics from various sources, and explored the options to make these number \"visible\" on map. To handle data in various formats and qualities, I employed my fimilarity with data syntax and skills in programming for text processing to handle the data effectively and accurately. This is an ongoing project and all results are available at http://worldmap.harvard.edu/africamap."
     },
     {
       "title": "GIS off the Shore: Eelgrass Mapping",
       "type": "Visualization",
-      "description": ""
+      "description": "Eelgrass (<i>Zostera</i>) is an vital species in coastal ecosystems. It provides nutritions for many shallow ocean animals, and consequently sustains the fishery economy in the state of Maine. The goal of eelgrass mapping is to investigate, monitor and visualize eelgrass distribution. Before entering the field, potential eelgrass patches were identified on low-tide aerial imagery and digitized in ArcGIS. While in the field, we drove a boat, navigated by ArcPad to visit every location we identified, and recorded the actual condition with notes, GPS tracklogs, photos and videos. After the field work, the data collected were summarized and released as public-accessible information in a web mapping application."
     },
     {
       "title": "Web GIS Crowd-sourcing",
@@ -24,9 +24,9 @@
       "description": "Internet provides an effective way for multiple people to contribute geospatial data to one database. I participated in two crowd-sourcing GIS projects. <b>Maine Elver Map</b> was designed for marine patrol officers to report locations where illegal harvesting of elvers (young eels) were found. It successfully gathered 85 locations reported by about 10 officers. It employed Google Maps API and Google Fusion Table to provide a user interface and a publicly accessible database. Any input data was immediately reviewed by administrators via email to ensure the quality of the data. <b>QianTang River Map</b> was built to gather succeptible water pollution activities along the river. This project was initiated by Green Zhejiang, an environmental protection NGO in China. I worked as the primary technical lead to implement the system. Built upon Ushahidi's CrowdMap platform, it leverages open-source tools to provide a zero-cost and easy-to-use solution to the NGO's need for crowd-sourcing."
     },
     {
-      "title": "When Something is Built",
+      "title": "When Something is Built...",
       "type": "Visualization",
-      "description": "This series of maps was produced to simulate the landscapes after highways, dams "
+      "description": "In the beginning of the 21st century, Taiwan government proposed several \"mega projects\", including a highway crossing a 10,000-ft mountain ridge, a 4000-acre artificial reservoir for industrial water supply, etc. To simulate these projects' impact on the landscapes, I independently created 12 3-D visualization scenes to give the public a chance to \"preview\" the changed landscapes when the construction is complete. These scenes were made by scanning and georeferencing maps from the project plans, retrieving Google's sattelite imagery, overlaying data with digital terrain model (DTM) in ArcScene, and post-export editing with Corel PhotoImpact."
     },
     {
       "title": "\"Bridge\" the Green Gap",
@@ -42,7 +42,7 @@
         "time": "2010-2012",
         "degree": "Master of Science",
         "major": "Geographic Information Science for Development and Environment",
-        "gpa": "4.03/4.00"
+        "gpa": "<b>4.03</b>/4.00"
       },
       {
         "school": "National Taiwan University",
@@ -50,7 +50,7 @@
         "time": "2005-2009",
         "degree": "Bachelor of Science",
         "major": "Geography (with a minor in sociology)",
-        "gpa": "3.96/4.00"
+        "gpa": "<b>3.96</b>/4.00 (or 89.5/100; ranked 1st in a class of 36)"
       }
     ],
     "profession": [
