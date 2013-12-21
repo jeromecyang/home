@@ -45,6 +45,7 @@
             instance.append($("<div>").html(item.degree + " in " + item.major));
             instance.append($("<div>").html(([item.school, item.location, item.time]).join(", ")));
             instance.append($("<div>").html("GPA: " + item.gpa));
+            instance.append($("<div>").html("Focus: " + item.focus));
             $("#education").append(instance);
           });
           
@@ -69,8 +70,8 @@
           
           $.each(data.resume.presentation, function(index, item){
             var instance = $("<div>", { class: "instance" });
-            instance.append($("<div>").html(item.presentors + " (" + item.time + ")"));
-            //instance.append($("<div>").html(([item.organization, item.time]).join(", ")));
+            instance.append($("<div>").html(item.presentors + ", \"" + item.title + "\""));
+            instance.append($("<div>").html(([item.event, item.location, item.time]).join(", ")));
             $("#presentation").append(instance);
           });
         });

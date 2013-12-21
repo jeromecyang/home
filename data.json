@@ -4,9 +4,14 @@
   },
   "portfolio": [
     {
+      "title": "Expand the Capacity of Web Mapping",
+      "type": "Visualization",
+      "description": "Work at Esri"
+    },
+    {
       "title": "Map from Scratch: Central Massachusetts Air Pollutants Mapping",
       "type": "Visualization",
-      "description": ""
+      "description": "Air pollution mapping requires interpolation from point data. Instead of obtaining observations from existing monitoring stations, in this project we mapped air pollution from scratch - that is, we designed a monitoring network where the distribution of stations is optimized, went into the field to collect first-hand data, and explored the best way to visualize the data. Works included spatial optimization algorithm, experiment design, field particulate matter measurement, and visualization. This project, which was proposed and coordinated by me, ultimately involved a interdisciplinary and collaborative effort of two professors and four graduate students with background in GIS, environmental science, physics, etc. It was awarded by Geller's Research Grant at Clark University."
     },
     {
       "title": "AfricaMap",
@@ -42,7 +47,8 @@
         "time": "2010-2012",
         "degree": "Master of Science",
         "major": "Geographic Information Science for Development and Environment",
-        "gpa": "<b>4.03</b>/4.00"
+        "gpa": "<b>4.03</b>/4.00",
+        "focus": "Web mapping, participatory GIS, air pollution mapping, spatial epidemiology, spatial statistics"
       },
       {
         "school": "National Taiwan University",
@@ -50,7 +56,8 @@
         "time": "2005-2009",
         "degree": "Bachelor of Science",
         "major": "Geography (with a minor in sociology)",
-        "gpa": "<b>3.96</b>/4.00 (or 89.5/100; ranked 1st in a class of 36)"
+        "gpa": "<b>3.96</b>/4.00 (or 89.5/100; ranked 1st in a class of 36)",
+        "focus": "Cartography, GIS, urban geography, spatiotemporal analysis"
       }
     ],
     "profession": [
@@ -159,39 +166,46 @@
     ],
     "presentation": [
       {
-        "presentors": "Xin, Hao and Yang, Chia-Rung",
-        "title": "",
-        "time": "",
-        "event": "",
-        "location": ""
+        "presentors": "Yang, C.-R.",
+        "title": "Five Ways I Make Maps",
+        "time": "April 2012",
+        "event": "Clark Cartography and Geovisualization Talks",
+        "location": "Worcester, MA"
       },
       {
-        "presentors": "",
-        "title": "",
-        "time": "",
-        "event": "",
-        "location": ""
+        "presentors": "Yang, C.-R. and Xia, H.",
+        "title": "Exploring the Association between Low Birth Weight and Exposure to Air Pollution in Massachusetts: Air Pollution Concentration Monitoring",
+        "time": "April 2012",
+        "event": "Clark Annual Graduate Student Council Multidisciplinary Conference",
+        "location": "Worcester, MA"
       },
       {
-        "presentors": "",
-        "title": "",
-        "time": "",
-        "event": "",
-        "location": ""
+        "presentors": "Yang, C.-R. and Xia, H.",
+        "title": "Characterizing Factors Associated with Low Birth Weight in Massachusetts Using Geographically Weighted Logistic Regression",
+        "time": "February 2012",
+        "event": "The Spatial Analysis and Modeling (SAM) Specialty Group Student Paper Competition at The Association of American Geographers (AAG) Annual Meeting",
+        "location": "New York, NY"
       },
       {
-        "presentors": "",
-        "title": "",
-        "time": "",
-        "event": "",
-        "location": ""
+        "presentors": "Xin, H. and Yang, C.-R.",
+        "title": "Using IDRISI to Predict Japan's Nuclear Fallout Dispersion in the Pacific Ocean",
+        "time": "December 2011",
+        "event": "International Symposium on Remote Sensing and GIS Methods for Change Detection and Spatio-temporal Modelling (CDSM)",
+        "location": "Hong Kong SAR, China"
       },
       {
-        "presentors": "",
-        "title": "",
-        "time": "",
-        "event": "",
-        "location": ""
+        "presentors": "Yang, C.-R.",
+        "title": "Exploring the Association between Low Birth Weight and Exposure to Lead Using Geographically Weighted Odds Ratio",
+        "time": "October 2011",
+        "event": "New England - St Lawrence Valley Geographical Association (NESTVAL) Annual Conference",
+        "location": "Montreal, QC, Canada"
+      },
+      {
+        "presentors": "Xin, H. and Yang, C.-R.",
+        "title": "GIS Our Waterways Using Open Source GIS to Develop Interactive Maps for Our Waterways",
+        "time": "June 2011",
+        "event": "Waterkeeper Alliance Annual Conference",
+        "location": "Evanston, IL"
       }
     ]
   }
