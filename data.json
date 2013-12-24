@@ -31,7 +31,9 @@
     {
       "title": "When Something is Built...",
       "type": "Visualization",
-      "description": "In the beginning of the 21st century, Taiwan government proposed several \"mega projects\", including a highway crossing a 10,000-ft mountain ridge, a 4000-acre artificial reservoir for industrial water supply, etc. To simulate these projects' impact on the landscapes, I independently created 12 3-D visualization scenes to give the public a chance to \"preview\" the changed landscapes when the construction is complete. These scenes were made by scanning and georeferencing maps from the project plans, retrieving Google's sattelite imagery, overlaying data with digital terrain model (DTM) in ArcScene, and post-export editing with Corel PhotoImpact."
+      "description": "In the beginning of the 21st century, Taiwan government proposed several \"mega projects\", including a highway crossing a 10,000-ft mountain ridge, a 4000-acre artificial reservoir for industrial water supply, etc. To simulate these projects' impact on the landscapes, I independently created 12 3-D visualization scenes to give the public a chance to \"preview\" the changed landscapes when the construction is complete. These scenes were made by scanning and georeferencing maps from the project plans, retrieving Google's sattelite imagery, overlaying data with digital terrain model (DTM) in ArcScene, and post-export editing with Corel PhotoImpact.",
+      "name": "construction",
+      "demo": "gallery"
     },
     {
       "title": "\"Bridge\" the Green Gap",

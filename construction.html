@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css" id="theme">
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <style>
+      .img {
+        padding: 2.5px;
+      }
+      #links {
+        width: 320px;
+        float: right;
+      }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/jquery.image-gallery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var names = [];
+        for (var i=0; i<10; i++) {
+          names.push("construction" + (i+1));
+        };
+        $.each(names, function(index, item){
+          var instance = $("<a>", { href: "images/" + item + ".jpg", title: item, class: "img"}).attr("data-dialog","");
+          instance.append($("<img>", {src: "images/thumbnail/" + item + ".jpg", alt: item}));
+          $("#links").append(instance);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <span>rnjuiwnrekg</span>
+      <div id="links"></div>
+    </div>
+    
+    <!-- The dialog widget -->
+    <div id="blueimp-gallery-dialog" data-show="fade" data-hide="fade">
+      <!-- The gallery widget  -->
+      <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
+        <div class="slides"></div>
+        <a class="prev">&lt;</a>
+        <a class="next">&gt;</a>
+        <a class="play-pause"></a>
+      </div>
+    </div>
+  </body>
+</html>

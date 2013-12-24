@@ -4,6 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
     <title>Jerome Yang</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css" id="theme">
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <style>
       #main {
         width: 960px;
@@ -27,8 +29,19 @@
         font-family: Segoe UI;
         margin: 10px 0 10px 0;
       }
+      .image {
+        width: 320px;
+        display: inline-block;
+      }
+      .description {
+        width: 640px;
+        display: inline-block;
+      }
     </style>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/jquery.image-gallery.min.js"></script>
     <script>
       $(document).ready(function() {
         $.getJSON("data.json", function(data){
@@ -36,7 +49,24 @@
             $("#portfolio-content").append($("<div>", { class: "title-2" }).html(item.title));
             var instance = $("<div>", { class: "instance" });
             instance.append($("<div>").html(item.type));
-            instance.append($("<div>").html(item.description));
+            var desc = $("<div>");
+            desc.append($("<div>", {class: "description"}).html(item.description));
+            //desc.append($("<div>", {class: "image"}).html("en3fjw"));
+            if (item.demo === "gallery") {
+            
+              var names = [];
+              for (var i=0; i<10; i++) {
+                names.push(item.name + (i+1));
+              };
+              var image = $("<div>", {class: "image"});
+              $.each(names, function(index, item){
+                var pics = $("<a>", { href: "images/" + item + ".jpg", title: item, class: "img"}).attr("data-dialog","");
+                pics.append($("<img>", {src: "images/thumbnail/" + item + ".jpg", alt: item}));
+                image.append(pics);
+              });
+              desc.append(image);
+            };
+            instance.append(desc);
             $("#portfolio-content").append(instance);
           });
         
@@ -96,6 +126,17 @@
         <div id="presentation"></div>
         <div class="title-2">Awards and Honors</div>
         <div id="honor"></div>
+      </div>
+    </div>
+    
+    <!-- The dialog widget -->
+    <div id="blueimp-gallery-dialog" data-show="fade" data-hide="fade">
+      <!-- The gallery widget  -->
+      <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
+        <div class="slides"></div>
+        <a class="prev">&lt;</a>
+        <a class="next">&gt;</a>
+        <a class="play-pause"></a>
       </div>
     </div>
   </body>
