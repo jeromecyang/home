@@ -4,9 +4,17 @@
   },
   "portfolio": [
     {
-      "title": "Expand the Capacity of Web Mapping",
+      "title": "Expand the Capacity of Vector Mapping",
       "type": "Visualization",
-      "description": "Work at Esri"
+      "description": "",
+      "name": "vector",
+      "demo": "images",
+      "images": [
+        {
+          "src": "images/vector.png",
+          "url": "vector.html"
+        }
+      ]
     },
     {
       "title": "Map from Scratch: Central Massachusetts Air Pollutants Mapping",
@@ -15,8 +23,16 @@
     },
     {
       "title": "AfricaMap",
-      "type": "Web Map",
-      "description": "AfricaMap is an open-source web mapping platform designated for archiving, visualizing and integrating geospatial statistics particularly for Africa. One can easily find statistics from various organizations and governments, but how do we fit them together in one single platform? As a GIS analyst at Center for Geographic Analysis (CGA), Harvard University, I worked with Prof. Suzanne Blier to retrieve statistics from various sources, and explored the options to make these number \"visible\" on map. To handle data in various formats and qualities, I employed my fimilarity with data syntax and skills in programming for text processing to handle the data effectively and accurately. This is an ongoing project and all results are available at http://worldmap.harvard.edu/africamap."
+      "type": "Web-based geospatial data visualization in collaboration with Center for Geographic Analysis, Harvard University",
+      "description": "AfricaMap is an open-source web mapping platform designated for archiving, visualizing and integrating geospatial statistics particularly for Africa. One can easily find statistics from various organizations and governments, but how do we fit them together in one single platform? As a GIS analyst at Center for Geographic Analysis (CGA), Harvard University, I worked with Prof. Suzanne Blier to retrieve statistics from various sources, and explored the options to make these number \"visible\" on map. To handle data in various formats and qualities, I employed my fimilarity with data syntax and skills in programming for text processing to handle the data effectively and accurately. This is an ongoing project and all results are available at http://worldmap.harvard.edu/africamap.",
+      "name": "africa",
+      "demo": "images",
+      "images": [
+        {
+          "src": "images/africa.png",
+          "url": "http://worldmap.harvard.edu/africamap/"
+        }
+      ]
     },
     {
       "title": "GIS off the Shore: Eelgrass Mapping",
@@ -26,14 +42,26 @@
     {
       "title": "Web GIS Crowd-sourcing",
       "type": "Web Map",
-      "description": "Internet provides an effective way for multiple people to contribute geospatial data to one database. I participated in two crowd-sourcing GIS projects. <b>Maine Elver Map</b> was designed for marine patrol officers to report locations where illegal harvesting of elvers (young eels) were found. It successfully gathered 85 locations reported by about 10 officers. It employed Google Maps API and Google Fusion Table to provide a user interface and a publicly accessible database. Any input data was immediately reviewed by administrators via email to ensure the quality of the data. <b>QianTang River Map</b> was built to gather succeptible water pollution activities along the river. This project was initiated by Green Zhejiang, an environmental protection NGO in China. I worked as the primary technical lead to implement the system. Built upon Ushahidi's CrowdMap platform, it leverages open-source tools to provide a zero-cost and easy-to-use solution to the NGO's need for crowd-sourcing."
+      "description": "Internet provides an effective way for multiple people to contribute geospatial data to one database. I participated in two crowd-sourcing GIS projects. <b>Maine Elver Map</b> was designed for marine patrol officers to report locations where illegal harvesting of elvers (young eels) were found. It successfully gathered 85 locations reported by about 10 officers. It employed Google Maps API and Google Fusion Table to provide a user interface and a publicly accessible database. Any input data was immediately reviewed by administrators via email to ensure the quality of the data. <b>QianTang River Map</b> was built to gather succeptible water pollution activities along the river. This project was initiated by Green Zhejiang, an environmental protection NGO in China. I worked as the primary technical lead to implement the system. Built upon Ushahidi's CrowdMap platform, it leverages open-source tools to provide a zero-cost and easy-to-use solution to the NGO's need for crowd-sourcing.",
+      "name": "crowdsource",
+      "demo": "images",
+      "images": [
+        {
+          "src": "images/crowdsource1.png",
+          "url": ""
+        },{
+          "src": "images/crowdsource2.png",
+          "url": "http://www.qiantangriver.org/"
+        }
+      ]
     },
     {
       "title": "When Something is Built...",
       "type": "Visualization",
       "description": "In the beginning of the 21st century, Taiwan government proposed several \"mega projects\", including a highway crossing a 10,000-ft mountain ridge, a 4000-acre artificial reservoir for industrial water supply, etc. To simulate these projects' impact on the landscapes, I independently created 12 3-D visualization scenes to give the public a chance to \"preview\" the changed landscapes when the construction is complete. These scenes were made by scanning and georeferencing maps from the project plans, retrieving Google's sattelite imagery, overlaying data with digital terrain model (DTM) in ArcScene, and post-export editing with Corel PhotoImpact.",
       "name": "construction",
-      "demo": "gallery"
+      "demo": "gallery",
+      "length": 10
     },
     {
       "title": "\"Bridge\" the Green Gap",

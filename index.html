@@ -32,10 +32,12 @@
       .image {
         width: 320px;
         display: inline-block;
+        vertical-align: top;
       }
       .description {
         width: 640px;
         display: inline-block;
+        vertical-align: top;
       }
     </style>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -48,20 +50,31 @@
           $.each(data.portfolio, function(index, item){
             $("#portfolio-content").append($("<div>", { class: "title-2" }).html(item.title));
             var instance = $("<div>", { class: "instance" });
-            instance.append($("<div>").html(item.type));
+            instance.append($("<div>").append($("<i>").html(item.type)));
             var desc = $("<div>");
             desc.append($("<div>", {class: "description"}).html(item.description));
             //desc.append($("<div>", {class: "image"}).html("en3fjw"));
             if (item.demo === "gallery") {
-            
               var names = [];
-              for (var i=0; i<10; i++) {
+              for (var i=0; i<item.length; i++) {
                 names.push(item.name + (i+1));
               };
               var image = $("<div>", {class: "image"});
               $.each(names, function(index, item){
                 var pics = $("<a>", { href: "images/" + item + ".jpg", title: item, class: "img"}).attr("data-dialog","");
                 pics.append($("<img>", {src: "images/thumbnail/" + item + ".jpg", alt: item}));
+                image.append(pics);
+              });
+              desc.append(image);
+            } else if (item.demo === "images") {
+              /*var names = [];
+              for (var i=0; i<item.images.length; i++) {
+                names.push(item.name + (i+1));
+              };*/
+              var image = $("<div>", {class: "image"});
+              $.each(item.images, function(index, item){
+                var pics = $("<a>", {href: item.url, target: "_blank"});
+                pics.append($("<img>", {src: item.src, alt: item}));
                 image.append(pics);
               });
               desc.append(image);

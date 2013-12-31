@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Vector Mapping</title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.8/js/esri/css/esri.css">
+    <style>
+      html, body {
+        width: 960px;
+        margin: 0 auto 0 auto;
+        background-color: #000;
+      }
+      .map {
+        width: 470px;
+        height: 350px;
+        display: inline-block;
+      }
+    </style>
+    <script src="http://js.arcgis.com/3.8/"></script>
+    <script>
+      require([
+        "esri/map", "esri/layers/FeatureLayer",
+        "esri/symbols/TextSymbol", "esri/layers/LabelLayer",
+        "esri/renderers/SimpleRenderer", "esri/symbols/SimpleMarkerSymbol", "esri/symbols/SimpleFillSymbol",
+        "esri/renderers/DotDensityRenderer", "dojo/_base/Color", "dojo/domReady!"
+      ], function(
+        Map, FeatureLayer,
+        TextSymbol, LabelLayer,
+        SimpleRenderer, SimpleMarkerSymbol, SimpleFillSymbol,
+        DotDensityRenderer, Color
+      ) {
+        var mapConfig = {
+          basemap: "topo",
+          center: [-100,40],
+          zoom: 6,
+        };
+        
+        var map1 = new Map("map1", mapConfig);
+        var map2 = new Map("map2", mapConfig);
+        var map3 = new Map("map3", mapConfig);
+        var map4 = new Map("map4", mapConfig);
+        
+        var fsUrl = "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Demographics/ESRI_Census_USA/MapServer/3";
+        var fsConfig = {
+          outFields: ["POP2007"],
+          mode: FeatureLayer.MODE_ONDEMAND
+        };
+        
+        var layer1 = new FeatureLayer(fsUrl, fsConfig);
+        var layer2 = new FeatureLayer(fsUrl, fsConfig);
+        var layer3 = new FeatureLayer(fsUrl, fsConfig);
+        var layer4 = new FeatureLayer(fsUrl, fsConfig);
+        
+        var label = new TextSymbol();
+        label.font.setFamily("Arial");
+        var labelRenderer = new SimpleRenderer(label);
+        var labelLayer = new LabelLayer();
+        labelLayer.addFeatureLayer(layer1, labelRenderer, "${POP2007}");
+        map1.addLayer(labelLayer);
+
+        layer2.setRenderer(new SimpleRenderer(new SimpleMarkerSymbol().setColor(new Color("#ffa500"))).setProportionalSymbolInfo({
+          field: "POP2007",
+          minSize: 4,
+          maxSize: 20,
+          minDataValue:100,
+          maxDataValue:10000
+        }));
+        
+        layer3.setRenderer(new SimpleRenderer(new SimpleFillSymbol()).setColorInfo({
+          field: "POP2007",
+          minDataValue: 100,
+          maxDataValue: 10000,
+          colors: [
+            new Color([255, 255, 255]),
+            new Color([127, 127, 0])
+          ]
+        }));
+        
+        layer4.setRenderer(new DotDensityRenderer({
+          fields: [{
+            name: "POP2007",
+            color: new Color("#f00")
+          }],
+          dotValue: 5000,
+          dotSize: 2
+        }));
+        
+        //map1.addLayer(layer1);
+        map2.addLayer(layer2);
+        map3.addLayer(layer3);
+        map4.addLayer(layer4);
+
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="map1" class="map"></div>
+    <div id="map2" class="map"></div>
+    <div id="map3" class="map"></div>
+    <div id="map4" class="map"></div>
+  </body>
+</html>
