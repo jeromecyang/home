@@ -1,12 +1,13 @@
 {
   "about": {
-    "description": "blahblahblah"
+    "description": "I am a web developer, cartographer and graphic designer. I have an innate passion for collecting, visualizing and analyzing geospatial data as a means to understand the environment and the people in it. Currently working at Esri Inc., I develop, prototype and improve the ArcGIS API for JavaScript and ArcGIS Online to empower people with stronger and better web-based data visualization tools. My hobbies are: travel, biking, hiking, reading and making maps.",
+    "photo": "images/profile.jpg"
   },
   "portfolio": [
     {
-      "title": "Expand the Capacity of Vector Mapping",
-      "type": "Visualization",
-      "description": "",
+      "title": "Expanding the Capacity of Web Mapping",
+      "type": "Advancing geospatial data visualization technology with <a href='http://www.esri.com/' target='_blank'>Esri, Inc.</a>",
+      "description": "<p>\"Let geographic data tell stories via the Internet\" is this project's goal. As world-wide web becomes the primary media of maps and geographic information, how should traditional maps and cartography evolve to meet the emerging needs and challenges of web mapping?</p><p>Now dot density, proportional symbol, color ramp mapping are all available in the <a href='http://developers.arcgis.com/en/javascript/' target='_blank'>ArcGIS API for JavaScript</a>. Rather than just migrating everything in conventional cartography from papers to browsers, we explored new concepts, new workflows and new visual effects, by which web developers can convey new messages with powerful mapping tools.</p>Demos:<ul><li><a href='vector.html' target='_blank'>One dataset, multiple ways to visualize</a></li><li><a href='vector.html' target='_blank'>Scale-dependent dot density map</a></li><li><a href='vector.html' target='_blank'>Choropleth map without class breaks</a></li></ul>",
       "name": "vector",
       "demo": "images",
       "images": [
@@ -17,14 +18,18 @@
       ]
     },
     {
-      "title": "Map from Scratch: Central Massachusetts Air Pollutants Mapping",
-      "type": "Visualization",
-      "description": "Air pollution mapping requires interpolation from point data. Instead of obtaining observations from existing monitoring stations, in this project we mapped air pollution from scratch - that is, we designed a monitoring network where the distribution of stations is optimized, went into the field to collect first-hand data, and explored the best way to visualize the data. Works included spatial optimization algorithm, experiment design, field particulate matter measurement, and visualization. This project, which was proposed and coordinated by me, ultimately involved a interdisciplinary and collaborative effort of two professors and four graduate students with background in GIS, environmental science, physics, etc. It was awarded by Geller's Research Grant at Clark University."
+      "title": "Visualization from Scratch: Air Pollutants Mapping",
+      "type": "Beginning with collecting first-hand air quality data in the field",
+      "description": "<p>Air pollution mapping requires interpolation from point data. Instead of obtaining observations from existing monitoring stations, in this project we mapped air pollution from scratch - that is, we designed a monitoring network where the distribution of stations is optimized, went into the field to collect first-hand data, and explored the best way to visualize the data. Works included spatial optimization algorithm, experiment design, field particulate matter measurement, and visualization.</p><p>This project, which was proposed and coordinated by me, ultimately involved a interdisciplinary and collaborative effort of two professors and four graduate students with background in GIS, environmental science, physics, etc. It was awarded by Geller's Research Grant at <a href='http://www.clarku.edu/index.cfm' target='_blank'>Clark University</a>.</p><ul><li>Check out this slide show for a brief project overview</li><li>Conference poster</li><li>Full project report</li></ul>",
+      "name": "air",
+      "demo": "gallery",
+      "length": 6,
+      "format": "png"
     },
     {
       "title": "AfricaMap",
       "type": "Web-based geospatial data visualization in collaboration with Center for Geographic Analysis, Harvard University",
-      "description": "AfricaMap is an open-source web mapping platform designated for archiving, visualizing and integrating geospatial statistics particularly for Africa. One can easily find statistics from various organizations and governments, but how do we fit them together in one single platform? As a GIS analyst at Center for Geographic Analysis (CGA), Harvard University, I worked with Prof. Suzanne Blier to retrieve statistics from various sources, and explored the options to make these number \"visible\" on map. To handle data in various formats and qualities, I employed my fimilarity with data syntax and skills in programming for text processing to handle the data effectively and accurately. This is an ongoing project and all results are available at http://worldmap.harvard.edu/africamap.",
+      "description": "<p><a href='http://worldmap.harvard.edu/africamap' target='_blank'>AfricaMap</a> is an open-source web mapping platform designated for archiving, visualizing and integrating geospatial statistics particularly for Africa. One can easily find statistics from various organizations and governments, but <i>how do we fit them together in one single platform?</i></p><p>As a GIS analyst at <a href='http://gis.harvard.edu/icb/icb.do' target='_blank'>Center for Geographic Analysis (CGA), Harvard University</a>, I worked with African-Art-and-Architecture historian <a href='http://aaas.fas.harvard.edu/directory/faculty/suzanne-p-blier' target='_blank'>Dr. Suzanne P. Blier</a> to retrieve statistics from various sources, and explored the options to make these number \"visible\" on map. To handle data in various formats and qualities, I employed my fimilarity with data syntax and skills in programming for text processing to handle the data effectively and accurately. This is an ongoing project and all results are available at http://worldmap.harvard.edu/africamap.</p><ul><li><a href='http://worldmap.harvard.edu/africamap' target='_blank'>AfricaMap</a></li><li><a href='http://www.neh.gov/divisions/odh/grant-news/announcing-6-digital-humanities-implementation-grant-awards-july-2013' target='_blank'>Announcing 6 Digital Humanities Implementation Grant Awards (July 2013)</a></li></ul>",
       "name": "africa",
       "demo": "images",
       "images": [
@@ -61,7 +66,8 @@
       "description": "In the beginning of the 21st century, Taiwan government proposed several \"mega projects\", including a highway crossing a 10,000-ft mountain ridge, a 4000-acre artificial reservoir for industrial water supply, etc. To simulate these projects' impact on the landscapes, I independently created 12 3-D visualization scenes to give the public a chance to \"preview\" the changed landscapes when the construction is complete. These scenes were made by scanning and georeferencing maps from the project plans, retrieving Google's sattelite imagery, overlaying data with digital terrain model (DTM) in ArcScene, and post-export editing with Corel PhotoImpact.",
       "name": "construction",
       "demo": "gallery",
-      "length": 10
+      "length": 10,
+      "format": "jpg"
     },
     {
       "title": "\"Bridge\" the Green Gap",

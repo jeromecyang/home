@@ -11,14 +11,29 @@
         width: 960px;
         margin: 0 auto 0 auto;
       }
+      #front-page {
+        display: table;
+        width: 100%;
+      }
+      #front-content {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+      }
       .header {
         font-size: 54px;
+        font-family: Georgia;
+        margin: auto;
+      }
+      #contact {
+        font-size: 11px;
         font-family: Segoe UI;
       }
       .title-1 {
         font-size: 48px;
         font-family: Segoe UI Light;
         margin: 24px 0 0 0;
+        text-align: center;
       }
       .title-2 {
         font-size: 28px;
@@ -39,6 +54,21 @@
         display: inline-block;
         vertical-align: top;
       }
+      .description p {
+        text-indent: 20px;
+      }
+      #about-content {
+        font-family: Segoe UI;
+        text-indent: 20px;
+        display: inline-block;
+        width: 710px;
+        vertical-align: top;
+      }
+      #about-photo {
+        display: inline-block;
+        width: 240px;
+        vertical-align: top;
+      }
     </style>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -46,14 +76,21 @@
     <script src="js/jquery.image-gallery.min.js"></script>
     <script>
       $(document).ready(function() {
+        $("#front-page").css({"height":$(window).height()+"px"});
+
+        //$("html,body").animate({scrollTop:1200}, 1000, "swing");
+      
         $.getJSON("data.json", function(data){
+          $("#about-content").html(data.about.description);
+          $("#about-photo").html($("<img>", {src: data.about.photo, alt: "Profile photo"}));
+          
           $.each(data.portfolio, function(index, item){
             $("#portfolio-content").append($("<div>", { class: "title-2" }).html(item.title));
             var instance = $("<div>", { class: "instance" });
             instance.append($("<div>").append($("<i>").html(item.type)));
             var desc = $("<div>");
             desc.append($("<div>", {class: "description"}).html(item.description));
-            //desc.append($("<div>", {class: "image"}).html("en3fjw"));
+            var format = item.format;
             if (item.demo === "gallery") {
               var names = [];
               for (var i=0; i<item.length; i++) {
@@ -61,8 +98,8 @@
               };
               var image = $("<div>", {class: "image"});
               $.each(names, function(index, item){
-                var pics = $("<a>", { href: "images/" + item + ".jpg", title: item, class: "img"}).attr("data-dialog","");
-                pics.append($("<img>", {src: "images/thumbnail/" + item + ".jpg", alt: item}));
+                var pics = $("<a>", { href: "images/" + item + "." + format, title: item, class: "img"}).attr("data-dialog","");
+                pics.append($("<img>", {src: "images/thumbnail/" + item + "." + format, alt: item}));
                 image.append(pics);
               });
               desc.append(image);
@@ -123,10 +160,18 @@
   </head>
   <body>
     <div id="main">
-      <div class="header">Jerome Yang</div>
-      <div>jeromecyang[at]gmail.com | http://jeromecyang.github.io/home/</div>
-      <div><a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#resume">Resume/CV</a></div>
+      <div id="front-page">
+        <div id="front-content">
+          <div class="header">Jerome Yang</div>
+          <div id="contact">jeromecyang[at]gmail.com | http://jeromecyang.github.io/home/ | <a href="http://www.linkedin.com/pub/jerome-yang/4b/95a/919" target="_blank">LinkedIn Profile</a></div>
+          <p><a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#resume">Resume/CV</a></p>
+        </div>
+      </div>
       <a id="about"><div class="title-1">About</div></a>
+      <div>
+        <div id="about-photo"></div>
+        <p id="about-content"></p>
+      </div>
       <a id="portfolio"><div class="title-1">Portfolio</div></a>
       <div id="portfolio-content"></div>
       <a id="resume"><div class="title-1">Resume/CV</div></a>
