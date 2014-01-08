@@ -20,7 +20,7 @@
     {
       "title": "Visualization from Scratch: Air Pollutants Mapping",
       "type": "Beginning with collecting first-hand air quality data in the field",
-      "description": "<p>Air pollution mapping requires interpolation from point data. Instead of obtaining observations from existing monitoring stations, in this project we mapped air pollution from scratch - that is, we designed a monitoring network where the distribution of stations is optimized, went into the field to collect first-hand data, and explored the best way to visualize the data. Works included spatial optimization algorithm, experiment design, field particulate matter measurement, and visualization.</p><p>This project, which was proposed and coordinated by me, ultimately involved a interdisciplinary and collaborative effort of two professors and four graduate students with background in GIS, environmental science, physics, etc. It was awarded by Geller's Research Grant at <a href='http://www.clarku.edu/index.cfm' target='_blank'>Clark University</a>.</p><ul><li>Check out this slide show for a brief project overview</li><li>Conference poster</li><li>Full project report</li></ul>",
+      "description": "<p>Air pollution mapping requires interpolation from point data. Instead of obtaining observations from existing monitoring stations, in this project we mapped air pollution from scratch - that is, we designed a monitoring network where the distribution of stations is optimized, went into the field to collect first-hand data, and explored the best way to visualize the data. Works included spatial optimization algorithm, experiment design, field particulate matter measurement, and visualization.</p><p>This project, which was proposed and coordinated by me, ultimately involved a interdisciplinary and collaborative effort of two professors and four graduate students with background in GIS, environmental science, physics, etc. It was awarded by Geller's Research Grant at <a href='http://www.clarku.edu/index.cfm' target='_blank'>Clark University</a>.</p><ul><li>Check out <a href='images/air1.png' title='air1' data-dialog>this slide show</a> for a brief project overview</li><li><a href='files/AirQuality_Poster4Research.pdf' target='_blank'>Conference poster</a></li><li><a href='files/Mapping the Concentration of Ambient Air Pollutants for Central Massachusetts.pdf' target='_blank'>Full project report</a></li></ul>",
       "name": "air",
       "demo": "gallery",
       "length": 6,
@@ -41,13 +41,17 @@
     },
     {
       "title": "GIS off the Shore: Eelgrass Mapping",
-      "type": "Visualization",
-      "description": "Eelgrass (<i>Zostera</i>) is an vital species in coastal ecosystems. It provides nutritions for many shallow ocean animals, and consequently sustains the fishery economy in the state of Maine. The goal of eelgrass mapping is to investigate, monitor and visualize eelgrass distribution. Before entering the field, potential eelgrass patches were identified on low-tide aerial imagery and digitized in ArcGIS. While in the field, we drove a boat, navigated by ArcPad to visit every location we identified, and recorded the actual condition with notes, GPS tracklogs, photos and videos. After the field work, the data collected were summarized and released as public-accessible information in a web mapping application."
+      "type": "Getting GIS on board with the <a href='http://www.maine.gov/dmr/index.htm' target='_blank'>Maine Department of Marine Resources</a>",
+      "description": "<p>Eelgrass (<i>Zostera</i>) is an vital species in coastal ecosystems. It provides nutritions for many shallow ocean animals, and consequently sustains the fishery economy in the state of Maine. The goal of <a href='http://www.maine.gov/dmr/rm/eelgrass/index.htm' target='_blank'>eelgrass mapping</a> is to investigate, monitor and visualize eelgrass distribution.</p><p>Before entering the field, potential eelgrass patches were identified on low-tide aerial imagery and digitized in ArcGIS. While in the field, we drove a boat, navigated by ArcPad to visit every location we identified, and recorded the actual condition with notes, GPS tracklogs, photos and videos. After the field work, the data collected were summarized and released as public-accessible information in a web mapping application.</p><ul><li>Click any pictures on the right for a brief project overview</li></ul>",
+      "name": "eelgrass",
+      "demo": "gallery",
+      "length": 6,
+      "format": "png"
     },
     {
       "title": "Web GIS Crowd-sourcing",
-      "type": "Web Map",
-      "description": "Internet provides an effective way for multiple people to contribute geospatial data to one database. I participated in two crowd-sourcing GIS projects. <b>Maine Elver Map</b> was designed for marine patrol officers to report locations where illegal harvesting of elvers (young eels) were found. It successfully gathered 85 locations reported by about 10 officers. It employed Google Maps API and Google Fusion Table to provide a user interface and a publicly accessible database. Any input data was immediately reviewed by administrators via email to ensure the quality of the data. <b>QianTang River Map</b> was built to gather succeptible water pollution activities along the river. This project was initiated by Green Zhejiang, an environmental protection NGO in China. I worked as the primary technical lead to implement the system. Built upon Ushahidi's CrowdMap platform, it leverages open-source tools to provide a zero-cost and easy-to-use solution to the NGO's need for crowd-sourcing.",
+      "type": "Developing interactive, collaborative web mapping applications",
+      "description": "<p>Internet provides an effective way for multiple people to contribute geospatial data to one database. I participated in two crowd-sourcing GIS projects.</p><p><b>Maine Elver Map</b> was designed for marine patrol officers to report locations where illegal harvesting of elvers (young eels) were found. It successfully gathered 85 locations reported by about 10 officers. It employed Google Maps API and Google Fusion Table to provide a user interface and a publicly accessible database. Any input data was immediately reviewed by administrators via email to ensure the quality of the data.</p><p><a href='http://www.qiantangriver.org/' target='_blank'>QianTang River Map</a> was built to gather succeptible water pollution activities along the river. This project was initiated by <a href='http://www.greenzj.com/' target='_blank'>Green Zhejiang</a>, an environmental protection NGO in China. I worked as the primary technical lead to implement the system. Built upon <a href='http://www.ushahidi.com/' target='_blank'>Ushahidi's CrowdMap</a> platform, it leverages open-source tools to provide a zero-cost and easy-to-use solution to the NGO's need for crowd-sourcing.</p>",
       "name": "crowdsource",
       "demo": "images",
       "images": [
@@ -62,8 +66,8 @@
     },
     {
       "title": "When Something is Built...",
-      "type": "Visualization",
-      "description": "In the beginning of the 21st century, Taiwan government proposed several \"mega projects\", including a highway crossing a 10,000-ft mountain ridge, a 4000-acre artificial reservoir for industrial water supply, etc. To simulate these projects' impact on the landscapes, I independently created 12 3-D visualization scenes to give the public a chance to \"preview\" the changed landscapes when the construction is complete. These scenes were made by scanning and georeferencing maps from the project plans, retrieving Google's sattelite imagery, overlaying data with digital terrain model (DTM) in ArcScene, and post-export editing with Corel PhotoImpact.",
+      "type": "3D terrian visualization of prospective constructions",
+      "description": "<p>In the beginning of the 21st century, Taiwan government proposed several \"mega projects\", including a highway crossing a 10,000-ft mountain ridge, a 4000-acre artificial reservoir for industrial water supply, etc.</p><p>To simulate these projects' impact on the landscapes, I independently created 12 3-D visualization scenes to give the public a chance to \"preview\" the changed landscapes when the construction is complete. These scenes were made by scanning and georeferencing maps from the project plans, retrieving Google's sattelite imagery, overlaying data with digital terrain model (DTM) in ArcScene, and post-export editing with Corel PhotoImpact.</p>",
       "name": "construction",
       "demo": "gallery",
       "length": 10,
@@ -72,7 +76,7 @@
     {
       "title": "\"Bridge\" the Green Gap",
       "type": "Landscape Design",
-      "description": ""
+      "description": "Coming soon"
     }
   ],
   "resume": {
