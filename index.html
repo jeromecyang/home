@@ -11,6 +11,15 @@
         width: 960px;
         margin: 0 auto 0 auto;
       }
+      #nav-bar {
+        position: relative;
+        margin-left: 700px;
+        font: 11px Segoe UI;
+        background-color: #eee;
+        color: #888;
+        padding: 5px;
+        border-radius: 0 0 5px 5px;
+      }
       #front-page {
         display: table;
         width: 100%;
@@ -19,6 +28,14 @@
         text-align: center;
         display: table-cell;
         vertical-align: middle;
+        font-family: Segoe UI;
+      }
+      #front-content a, #nav-bar a {
+        color: #000;
+        text-decoration: none;
+      }
+      #front-content a:hover, #nav-bar a:hover {
+        text-decoration: underline;
       }
       .header {
         font-size: 54px;
@@ -30,15 +47,28 @@
         font-family: Segoe UI;
       }
       .title-1 {
-        font-size: 48px;
+        font-size: 60px;
         font-family: Segoe UI Light;
         margin: 24px 0 0 0;
         text-align: center;
       }
       .title-2 {
-        font-size: 28px;
+        font-size: 24px;
         font-family: Segoe UI Semibold;
-        margin: 18px 0 0 0;
+        margin-top: 18px;
+      }
+      .summary {
+        font: italic 11px Comic Sans MS;
+        color: #888;
+        text-indent: 40px;
+      }
+      .summary a {
+        color: #888;
+        border-bottom: 1px dashed #888;
+        text-decoration: none;
+      }
+      .summary a:hover {
+        border-bottom: 1px solid #888;
       }
       .instance {
         font-family: Segoe UI;
@@ -48,11 +78,21 @@
         width: 320px;
         display: inline-block;
         vertical-align: top;
+        margin-top: 20px;
       }
       .description {
-        width: 640px;
+        width: 620px;
         display: inline-block;
         vertical-align: top;
+        margin-right: 20px;
+      }
+      .description a {
+        color: #000;
+        border-bottom: 1px dashed #000;
+        text-decoration: none;
+      }
+      .description a:hover {
+        border-bottom: 1px solid #000;
       }
       .description p {
         text-indent: 20px;
@@ -61,10 +101,12 @@
         font-family: Segoe UI;
         text-indent: 20px;
         display: inline-block;
-        width: 710px;
+        width: 690px;
         vertical-align: top;
+        margin-left: 20px;
       }
       #about-photo {
+        margin-top: 20px;
         display: inline-block;
         width: 240px;
         vertical-align: top;
@@ -78,7 +120,19 @@
       $(document).ready(function() {
         $("#front-page").css({"height":$(window).height()+"px"});
 
-        //$("html,body").animate({scrollTop:1200}, 1000, "swing");
+        $(".page-link").click(function(event){
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800,'swing');
+        });
+        
+        $("#nav-bar").hide();
+        $(window).on("scroll", function(evt){
+          if ($(window).scrollTop() > $(window).height()) {
+            $("#nav-bar").show(800);
+          } else {
+            $("#nav-bar").hide(800);
+          };
+        });
       
         $.getJSON("data.json", function(data){
           $("#about-content").html(data.about.description);
@@ -87,7 +141,7 @@
           $.each(data.portfolio, function(index, item){
             $("#portfolio-content").append($("<div>", { class: "title-2" }).html(item.title));
             var instance = $("<div>", { class: "instance" });
-            instance.append($("<div>").append($("<i>").html(item.type)));
+            instance.append($("<div>", { class: "summary" }).html("&mdash; " + item.type));
             var desc = $("<div>");
             desc.append($("<div>", {class: "description"}).html(item.description));
             var format = item.format;
@@ -160,11 +214,14 @@
   </head>
   <body>
     <div id="main">
-      <div id="front-page">
+      <div style="position: fixed; top: 0;">
+        <div id="nav-bar"><a href="#top" class="page-link">Home</a> | <a href="#about" class="page-link">About</a> | <a href="#portfolio" class="page-link">Portfolio</a> | <a href="#resume" class="page-link">Resume/CV</a></div>
+      </div>
+      <div id="front-page"><a id="top"></a>
         <div id="front-content">
           <div class="header">Jerome Yang</div>
           <div id="contact">jeromecyang[at]gmail.com | http://jeromecyang.github.io/home/ | <a href="http://www.linkedin.com/pub/jerome-yang/4b/95a/919" target="_blank">LinkedIn Profile</a></div>
-          <p><a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#resume">Resume/CV</a></p>
+          <p><a class="page-link" href="#about">About</a> | <a class="page-link" href="#portfolio">Portfolio</a> | <a class="page-link" href="#resume">Resume/CV</a></p>
         </div>
       </div>
       <a id="about"><div class="title-1">About</div></a>
