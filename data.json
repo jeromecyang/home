@@ -87,8 +87,10 @@
         "time": "2010-2012",
         "degree": "Master of Science",
         "major": "Geographic Information Science for Development and Environment",
-        "gpa": "<b>4.03</b>/4.00",
-        "focus": "Web mapping, participatory GIS, air pollution mapping, spatial epidemiology, spatial statistics"
+        "description": [
+          "GPA: <b>4.03</b>/4.00",
+          "Web mapping, participatory GIS, air pollution mapping, spatial epidemiology, spatial statistics"
+        ]
       },
       {
         "school": "National Taiwan University",
@@ -96,8 +98,10 @@
         "time": "2005-2009",
         "degree": "Bachelor of Science",
         "major": "Geography (with a minor in sociology)",
-        "gpa": "<b>3.96</b>/4.00 (or 89.5/100; ranked 1st in a class of 36)",
-        "focus": "Cartography, GIS, urban geography, spatiotemporal analysis"
+        "description": [
+          "GPA: <b>3.96</b>/4.00 (or 89.5/100; ranked 1st in a class of 36)",
+          "Focus: Cartography, GIS, urban geography, spatiotemporal analysis"
+        ]
       }
     ],
     "profession": [

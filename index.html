@@ -49,16 +49,17 @@
       .title-1 {
         font-size: 60px;
         font-family: Segoe UI Light;
-        margin: 24px 0 0 0;
+        margin-top: 24px;
         text-align: center;
       }
       .title-2 {
-        font-size: 24px;
-        font-family: Segoe UI Semibold;
+        font-size: 28px;
+        font-family: Impact;
+        color: #666;
         margin-top: 18px;
       }
       .summary {
-        font: italic 11px Comic Sans MS;
+        font: 14px Comic Sans MS;
         color: #888;
         text-indent: 40px;
       }
@@ -110,6 +111,19 @@
         display: inline-block;
         width: 240px;
         vertical-align: top;
+      }
+      .resume-highlight {
+        margin-top: 20px;
+        font-family: Segoe UI Bold;
+        font-weight: 900;
+      }
+      .resume-placetime {
+        margin-left: 15px;
+        font-size: 11px;
+        color: #fff;
+        background-color: #aaa;
+        padding: 2px 4px;
+        border-radius: 2px;
       }
     </style>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -175,24 +189,35 @@
           });
         
           $.each(data.resume.education, function(index, item){
-            var instance = $("<div>", { class: "instance" });
-            instance.append($("<div>").html(item.degree + " in " + item.major));
-            instance.append($("<div>").html(([item.school, item.location, item.time]).join(", ")));
-            instance.append($("<div>").html("GPA: " + item.gpa));
-            instance.append($("<div>").html("Focus: " + item.focus));
-            $("#education").append(instance);
-          });
-          
-          $.each(data.resume.profession, function(index, item){
-            var instance = $("<div>", { class: "instance" });
-            instance.append($("<div>").html(item.position + ", " + item.organization));
-            instance.append($("<div>").html(([item.location, item.time]).join(", ")));
             var desc = $("<ul>");
             $.each(item.description, function(index, line){
               desc.append($("<li>").html(line));
             });
-            instance.append(desc);
-            $("#profession").append(instance);
+          
+            $("<div>", { class: "instance" })
+              .append($("<div>")
+                .append($("<span>", {class: "resume-highlight"}).html(item.school))
+                .append($("<span>", {class: "resume-placetime"}).html(([item.location, item.time]).join(" | ")))
+              )
+              .append($("<div>").html(item.degree + " in " + item.major))
+              .append(desc)
+              .appendTo("#education");
+          });
+          
+          $.each(data.resume.profession, function(index, item){
+            var desc = $("<ul>");
+            $.each(item.description, function(index, line){
+              desc.append($("<li>").html(line));
+            });
+          
+            $("<div>", { class: "instance" })
+              .append($("<div>")
+                .append($("<span>", {class: "resume-highlight"}).html(item.organization))
+                .append($("<span>", {class: "resume-placetime"}).html(([item.location, item.time]).join(" | ")))
+              )
+              .append($("<div>").html(item.position))
+              .append(desc)
+              .appendTo("#profession");
           });
 
           $.each(data.resume.honor, function(index, item){
