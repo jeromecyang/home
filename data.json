@@ -23,8 +23,32 @@
       "description": "<p>Air pollution mapping requires interpolation from point data. Instead of obtaining observations from existing monitoring stations, in this project we mapped air pollution from scratch - that is, we designed a monitoring network where the distribution of stations is optimized, went into the field to collect first-hand data, and explored the best way to visualize the data. Works included spatial optimization algorithm, experiment design, field particulate matter measurement, and visualization.</p><p>This project, which was proposed and coordinated by me, ultimately involved a interdisciplinary and collaborative effort of two professors and four graduate students with background in GIS, environmental science, physics, etc. It was awarded by Geller's Research Grant at <a href='http://www.clarku.edu/index.cfm' target='_blank'>Clark University</a>.</p><ul><li>Check out <a href='images/air1.png' title='air1' data-dialog>this slide show</a> for a brief project overview</li><li><a href='files/AirQuality_Poster4Research.pdf' target='_blank'>Conference poster</a></li><li><a href='files/Mapping the Concentration of Ambient Air Pollutants for Central Massachusetts.pdf' target='_blank'>Full project report</a></li></ul>",
       "name": "air",
       "demo": "gallery",
-      "length": 6,
-      "format": "png"
+      "images": [
+        {
+          "name": "air1.png",
+          "title": "Highway"
+        },
+        {
+          "name": "air2.png",
+          "title": "Highway"
+        },
+        {
+          "name": "air3.png",
+          "title": "Highway"
+        },
+        {
+          "name": "air4.png",
+          "title": "Highway"
+        },
+        {
+          "name": "air5.png",
+          "title": "Highway"
+        },
+        {
+          "name": "air6.png",
+          "title": "Highway"
+        }
+      ]
     },
     {
       "title": "AfricaMap",
@@ -45,8 +69,32 @@
       "description": "<p>Eelgrass (<i>Zostera</i>) is an vital species in coastal ecosystems. It provides nutritions for many shallow ocean animals, and consequently sustains the fishery economy in the state of Maine. The goal of <a href='http://www.maine.gov/dmr/rm/eelgrass/index.htm' target='_blank'>eelgrass mapping</a> is to investigate, monitor and visualize eelgrass distribution.</p><p>Before entering the field, potential eelgrass patches were identified on low-tide aerial imagery and digitized in ArcGIS. While in the field, we drove a boat, navigated by ArcPad to visit every location we identified, and recorded the actual condition with notes, GPS tracklogs, photos and videos. After the field work, the data collected were summarized and released as public-accessible information in a web mapping application.</p><ul><li>Click any pictures on the right for a brief project overview</li></ul>",
       "name": "eelgrass",
       "demo": "gallery",
-      "length": 6,
-      "format": "png"
+      "images": [
+        {
+          "name": "eelgrass1.png",
+          "title": "Highway"
+        },
+        {
+          "name": "eelgrass2.png",
+          "title": "Highway"
+        },
+        {
+          "name": "eelgrass3.png",
+          "title": "Highway"
+        },
+        {
+          "name": "eelgrass4.png",
+          "title": "Highway"
+        },
+        {
+          "name": "eelgrass5.png",
+          "title": "Highway"
+        },
+        {
+          "name": "eelgrass6.png",
+          "title": "Highway"
+        }
+      ]
     },
     {
       "title": "Web GIS Crowd-sourcing",
@@ -70,8 +118,48 @@
       "description": "<p>In the beginning of the 21st century, Taiwan government proposed several \"mega projects\", including a highway crossing a 10,000-ft mountain ridge, a 4000-acre artificial reservoir for industrial water supply, etc.</p><p>To simulate these projects' impact on the landscapes, I independently created 12 3-D visualization scenes to give the public a chance to \"preview\" the changed landscapes when the construction is complete. These scenes were made by scanning and georeferencing maps from the project plans, retrieving Google's sattelite imagery, overlaying data with digital terrain model (DTM) in ArcScene, and post-export editing with Corel PhotoImpact.</p>",
       "name": "construction",
       "demo": "gallery",
-      "length": 10,
-      "format": "jpg"
+      "images": [
+        {
+          "name": "construction1.jpg",
+          "title": "Highway"
+        },
+        {
+          "name": "construction2.jpg",
+          "title": "Highway"
+        },
+        {
+          "name": "construction3.jpg",
+          "title": "Highway"
+        },
+        {
+          "name": "construction4.jpg",
+          "title": "Highway"
+        },
+        {
+          "name": "construction5.jpg",
+          "title": "Highway"
+        },
+        {
+          "name": "construction6.jpg",
+          "title": "Highway"
+        },
+        {
+          "name": "construction7.jpg",
+          "title": "Highway"
+        },
+        {
+          "name": "construction8.jpg",
+          "title": "Highway"
+        },
+        {
+          "name": "construction9.jpg",
+          "title": "Highway"
+        },
+        {
+          "name": "construction10.jpg",
+          "title": "Highway"
+        }
+      ]
     },
     {
       "title": "\"Bridge\" the Green Gap",
@@ -79,178 +167,210 @@
       "description": "Coming soon"
     }
   ],
-  "resume": {
-    "education": [
-      {
-        "school": "Clark University",
-        "location": "Worcester, MA",
-        "time": "2010-2012",
-        "degree": "Master of Science",
-        "major": "Geographic Information Science for Development and Environment",
-        "description": [
-          "GPA: <b>4.03</b>/4.00",
-          "Web mapping, participatory GIS, air pollution mapping, spatial epidemiology, spatial statistics"
-        ]
-      },
-      {
-        "school": "National Taiwan University",
-        "location": "Taipei, Taiwan",
-        "time": "2005-2009",
-        "degree": "Bachelor of Science",
-        "major": "Geography (with a minor in sociology)",
-        "description": [
-          "GPA: <b>3.96</b>/4.00 (or 89.5/100; ranked 1st in a class of 36)",
-          "Focus: Cartography, GIS, urban geography, spatiotemporal analysis"
-        ]
-      }
-    ],
-    "profession": [
-      {
-        "organization": "Esri Inc.",
-        "position": "Product Engineer",
-        "location": "Redlands, CA",
-        "time": "2012-present",
-        "description": [
-          "Developed and tested ArcGIS API for JavaScript (v3.1 - v3.8), ArcGIS.com.",
-          "Prototyped and documented JavaScript applications for ArcGIS users."
-        ]
-      },
-      {
-        "organization": "Esri Inc.",
-        "position": "Intern",
-        "location": "Redlands, CA",
-        "time": "2012",
-        "description": [
-          "Tested ArcGIS API for JavaScript v3.0 and ArcGIS.com."
-        ]
-      },
-      {
-        "organization": "Center for Geographic Analysis, Harvard University",
-        "position": "GIS Analyst",
-        "location": "Cambridge, MA",
-        "time": "2011-2012",
-        "description": [
-          "Visualized world demographic and religious data on the WorldMap web mapping platform.",
-          "Automating the process of parsing and integrating data from multiple sources using Python script."
-        ]
-      },
-      {
-        "organization": "Maine Department of Marine Resources",
-        "position": "GIS Technician",
-        "location": "Boothbay Harbor, ME",
-        "time": "2011",
-        "description": [
-          "Used Trimble GeoExplorer 2008 and ArcPad 10.0 to validate the accuracy of seagrass maps (groundtruthing).",
-          "Developed an API-based web map application for the Maine Marine Patrol officers to report the locations of young eel harvesting activities online.",
-          "Managed governmental spatial data of the government among multiple File Geodatabase (FGDB) and ArcSDE data servers."
-        ]
-      },
-      {
-        "organization": "National Children's Study",
-        "position": "Research Assistant",
-        "location": "Worcester, MA",
-        "time": "2011",
-        "description": [
-          "Visualized statistics (US Census and American Community Survey) and established spatial database for study area.",
-          "Integrated GPS tracker, Garmin application, and Google Earth to provide dynamic map for field investigation."
-        ]
-      },
-      {
-        "organization": "GISDE Lab., Clark University",
-        "position": "GIS Lab Manager",
-        "location": "Worcester, MA",
-        "time": "2011",
-        "description": [
-          "Provided technical support (desktop, printer, and GIS software) for 40 master's students.",
-          "Collected and updated the information of GIS conferences, jobs, and resources; sustained a GIS resource website."
-        ]
-      },
-      {
-        "organization": "Map and Multimedia Lab., National Taiwan University",
-        "position": "Cartographer and Map Editor",
-        "location": "Taipei, Taiwan",
-        "time": "2008-2009",
-        "description": [
-          "Illustrated and edited maps for an annual map calendar (print volume: 3,000) to promote geographical education.",
-          "Displayed data on maps for conference posters and a textbook by ArcGIS 9.2 and Adobe Illustrator CS3."
-        ]
-      }
-    ],
-    "honor": [
-      {
-        "name": "Geller Student Research Award",
-        "organization": "Marsh Institute, Clark University",
-        "time": "2011",
-        "note": "USD 2250.00"
-      },
-      {
-        "name": "Student Paper Award 1st Prize",
-        "organization": "New England-Saint Lawrence Valley Geographical Society",
-        "time": "2011",
-        "note": ""
-      },
-      {
-        "name": "IDCE Department Fellowship",
-        "organization": "Clark University",
-        "time": "2010",
-        "note": "50% tuition remission"
-      },
-      {
-        "name": "Presidential Award",
-        "organization": "National Taiwan University",
-        "time": "2006, 2007, 2008, 2009",
-        "note": "Top 5% in department"
-      },
-      {
-        "name": "Dean's Award",
-        "organization": "National Taiwan University",
-        "time": "2009",
-        "note": "Top 10% in graduating class"
-      }
-    ],
-    "presentation": [
-      {
-        "presentors": "Yang, C.-R.",
-        "title": "Five Ways I Make Maps",
-        "time": "April 2012",
-        "event": "Clark Cartography and Geovisualization Talks",
-        "location": "Worcester, MA"
-      },
-      {
-        "presentors": "Yang, C.-R. and Xia, H.",
-        "title": "Exploring the Association between Low Birth Weight and Exposure to Air Pollution in Massachusetts: Air Pollution Concentration Monitoring",
-        "time": "April 2012",
-        "event": "Clark Annual Graduate Student Council Multidisciplinary Conference",
-        "location": "Worcester, MA"
-      },
-      {
-        "presentors": "Yang, C.-R. and Xia, H.",
-        "title": "Characterizing Factors Associated with Low Birth Weight in Massachusetts Using Geographically Weighted Logistic Regression",
-        "time": "February 2012",
-        "event": "The Spatial Analysis and Modeling (SAM) Specialty Group Student Paper Competition at The Association of American Geographers (AAG) Annual Meeting",
-        "location": "New York, NY"
-      },
-      {
-        "presentors": "Xin, H. and Yang, C.-R.",
-        "title": "Using IDRISI to Predict Japan's Nuclear Fallout Dispersion in the Pacific Ocean",
-        "time": "December 2011",
-        "event": "International Symposium on Remote Sensing and GIS Methods for Change Detection and Spatio-temporal Modelling (CDSM)",
-        "location": "Hong Kong SAR, China"
-      },
-      {
-        "presentors": "Yang, C.-R.",
-        "title": "Exploring the Association between Low Birth Weight and Exposure to Lead Using Geographically Weighted Odds Ratio",
-        "time": "October 2011",
-        "event": "New England - St Lawrence Valley Geographical Association (NESTVAL) Annual Conference",
-        "location": "Montreal, QC, Canada"
-      },
-      {
-        "presentors": "Xin, H. and Yang, C.-R.",
-        "title": "GIS Our Waterways Using Open Source GIS to Develop Interactive Maps for Our Waterways",
-        "time": "June 2011",
-        "event": "Waterkeeper Alliance Annual Conference",
-        "location": "Evanston, IL"
-      }
-    ]
-  }
+  "resume": [
+    {
+      "title": "Education",
+      "display": "items",
+      "items": [
+        {
+          "title": "Clark University",
+          "subtitle": "Master of Science in Geographic Information Science for Development and Environment",
+          "location": "Worcester, MA",
+          "time": "2010-2012",
+          "description": [
+            "GPA: <b>4.03</b>/4.00",
+            "Web mapping, participatory GIS, air pollution mapping, spatial epidemiology, spatial statistics"
+          ]
+        },
+        {
+          "title": "National Taiwan University",
+          "subtitle": "Bachelor of Science in Geography (with a minor in sociology)",
+          "location": "Taipei, Taiwan",
+          "time": "2005-2009",
+          "description": [
+            "GPA: <b>3.96</b>/4.00 (or 89.5/100; ranked 1st in a class of 36)",
+            "Focus: Cartography, GIS, urban geography, spatiotemporal analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Professional Experience",
+      "display": "items",
+      "items": [
+        {
+          "title": "Esri Inc.",
+          "subtitle": "Product Engineer",
+          "location": "Redlands, CA",
+          "time": "2012-present",
+          "description": [
+            "Developed and tested ArcGIS API for JavaScript (v3.1 - v3.8), ArcGIS.com.",
+            "Prototyped and documented JavaScript applications for ArcGIS users."
+          ]
+        },
+        {
+          "title": "Esri Inc.",
+          "subtitle": "Intern",
+          "location": "Redlands, CA",
+          "time": "2012",
+          "description": [
+            "Tested ArcGIS API for JavaScript v3.0 and ArcGIS.com."
+          ]
+        },
+        {
+          "title": "Center for Geographic Analysis, Harvard University",
+          "subtitle": "GIS Analyst",
+          "location": "Cambridge, MA",
+          "time": "2011-2012",
+          "description": [
+            "Visualized world demographic and religious data on the WorldMap web mapping platform.",
+            "Automating the process of parsing and integrating data from multiple sources using Python script."
+          ]
+        },
+        {
+          "title": "Maine Department of Marine Resources",
+          "subtitle": "GIS Technician",
+          "location": "Boothbay Harbor, ME",
+          "time": "2011",
+          "description": [
+            "Used Trimble GeoExplorer 2008 and ArcPad 10.0 to validate the accuracy of seagrass maps (groundtruthing).",
+            "Developed an API-based web map application for the Maine Marine Patrol officers to report the locations of young eel harvesting activities online.",
+            "Managed governmental spatial data of the government among multiple File Geodatabase (FGDB) and ArcSDE data servers."
+          ]
+        },
+        {
+          "title": "National Children's Study",
+          "subtitle": "Research Assistant",
+          "location": "Worcester, MA",
+          "time": "2011",
+          "description": [
+            "Visualized statistics (US Census and American Community Survey) and established spatial database for study area.",
+            "Integrated GPS tracker, Garmin application, and Google Earth to provide dynamic map for field investigation."
+          ]
+        },
+        {
+          "title": "GISDE Lab., Clark University",
+          "subtitle": "GIS Lab Manager",
+          "location": "Worcester, MA",
+          "time": "2011",
+          "description": [
+            "Provided technical support (desktop, printer, and GIS software) for 40 master's students.",
+            "Collected and updated the information of GIS conferences, jobs, and resources; sustained a GIS resource website."
+          ]
+        },
+        {
+          "title": "Map and Multimedia Lab., National Taiwan University",
+          "subtitle": "Cartographer and Map Editor",
+          "location": "Taipei, Taiwan",
+          "time": "2008-2009",
+          "description": [
+            "Illustrated and edited maps for an annual map calendar (print volume: 3,000) to promote geographical education.",
+            "Displayed data on maps for conference posters and a textbook by ArcGIS 9.2 and Adobe Illustrator CS3."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Awards and Honors",
+      "display": "items",
+      "items": [
+        {
+          "title": "Geller Student Research Award",
+          "subtitle": "Marsh Institute, Clark University",
+          "location": "Worcester, MA",
+          "time": "2011",
+          "description": [
+            "Amount: USD 2,250."
+          ]
+        },
+        {
+          "title": "Student Paper Award 1st Prize",
+          "subtitle": "New England-Saint Lawrence Valley Geographical Society",
+          "location": "Montreal, QC, Canada",
+          "time": "2011",
+          "description": []
+        },
+        {
+          "title": "IDCE Department Fellowship",
+          "subtitle": "Clark University",
+          "location": "Worcester, MA",
+          "time": "2010-2012",
+          "description": [
+            "50% tuition remission"
+          ]
+        },
+        {
+          "title": "Presidential Award",
+          "subtitle": "National Taiwan University",
+          "location": "Taipei, Taiwan",
+          "time": "2006, 2007, 2008, 2009",
+          "description": [
+            "Top 5% in department. Awarded in six out of eight semesters."
+          ]
+        },
+        {
+          "title": "Dean's Award",
+          "subtitle": "National Taiwan University",
+          "location": "Taipei, Taiwan",
+          "time": "2009",
+          "description": [
+            "Top 10% in graduating class"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Talks and Presentations",
+      "display": "items",
+      "items": [
+        {
+          "title": "Five Ways I Make Maps",
+          "subtitle": "Clark Cartography and Geovisualization Talks",
+          "location": "Worcester, MA",
+          "time": "April 2012",
+          "description": []
+        },
+        {
+          "title": "Exploring the Association between Low Birth Weight and Exposure to Air Pollution in Massachusetts: Air Pollution Concentration Monitoring",
+          "subtitle": "Clark Annual Graduate Student Council Multidisciplinary Conference",
+          "location": "Worcester, MA",
+          "time": "April 2012",
+          "description": []
+        },
+        {
+          "title": "Characterizing Factors Associated with Low Birth Weight in Massachusetts Using Geographically Weighted Logistic Regression",
+          "subtitle": "The Spatial Analysis and Modeling (SAM) Specialty Group Student Paper Competition at The Association of American Geographers (AAG) Annual Meeting",
+          "location": "New York, NY",
+          "time": "February 2012",
+          "description": []
+        },
+        {
+          "title": "Using IDRISI to Predict Japan's Nuclear Fallout Dispersion in the Pacific Ocean",
+          "subtitle": "International Symposium on Remote Sensing and GIS Methods for Change Detection and Spatio-temporal Modelling (CDSM)",
+          "location": "Hong Kong SAR, China",
+          "time": "December 2011",
+          "description": []
+        },
+        {
+          "title": "Exploring the Association between Low Birth Weight and Exposure to Lead Using Geographically Weighted Odds Ratio",
+          "subtitle": "New England - St Lawrence Valley Geographical Association (NESTVAL) Annual Conference",
+          "location": "Montreal, QC, Canada",
+          "time": "October 2011",
+          "description": []
+        },
+        {
+          "title": "GIS Our Waterways Using Open Source GIS to Develop Interactive Maps for Our Waterways",
+          "subtitle": "Waterkeeper Alliance Annual Conference",
+          "location": "Evanston, IL",
+          "time": "June 2011",
+          "description": []
+        }
+      ]
+    },
+    {
+      "title": "Research Papers",
+      "display": "items",
+      "items": []
+    }
+  ]
 }

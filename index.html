@@ -61,7 +61,6 @@
       .summary {
         font: 14px Comic Sans MS;
         color: #888;
-        text-indent: 40px;
       }
       .summary a {
         color: #888;
@@ -153,85 +152,45 @@
           $("#about-photo").html($("<img>", {src: data.about.photo, alt: "Profile photo"}));
           
           $.each(data.portfolio, function(index, item){
-            $("#portfolio-content").append($("<div>", { class: "title-2" }).html(item.title));
-            var instance = $("<div>", { class: "instance" });
-            instance.append($("<div>", { class: "summary" }).html("&mdash; " + item.type));
-            var desc = $("<div>");
-            desc.append($("<div>", {class: "description"}).html(item.description));
-            var format = item.format;
-            if (item.demo === "gallery") {
-              var names = [];
-              for (var i=0; i<item.length; i++) {
-                names.push(item.name + (i+1));
-              };
-              var image = $("<div>", {class: "image"});
-              $.each(names, function(index, item){
-                var pics = $("<a>", { href: "images/" + item + "." + format, title: item, class: "img"}).attr("data-dialog","");
-                pics.append($("<img>", {src: "images/thumbnail/" + item + "." + format, alt: item}));
-                image.append(pics);
-              });
-              desc.append(image);
-            } else if (item.demo === "images") {
-              /*var names = [];
-              for (var i=0; i<item.images.length; i++) {
-                names.push(item.name + (i+1));
-              };*/
-              var image = $("<div>", {class: "image"});
-              $.each(item.images, function(index, item){
-                var pics = $("<a>", {href: item.url, target: "_blank"});
-                pics.append($("<img>", {src: item.src, alt: item}));
-                image.append(pics);
-              });
-              desc.append(image);
-            };
-            instance.append(desc);
-            $("#portfolio-content").append(instance);
-          });
-        
-          $.each(data.resume.education, function(index, item){
-            var desc = $("<ul>");
-            $.each(item.description, function(index, line){
-              desc.append($("<li>").html(line));
-            });
-          
-            $("<div>", { class: "instance" })
-              .append($("<div>")
-                .append($("<span>", {class: "resume-highlight"}).html(item.school))
-                .append($("<span>", {class: "resume-placetime"}).html(([item.location, item.time]).join(" | ")))
-              )
-              .append($("<div>").html(item.degree + " in " + item.major))
-              .append(desc)
-              .appendTo("#education");
-          });
-          
-          $.each(data.resume.profession, function(index, item){
-            var desc = $("<ul>");
-            $.each(item.description, function(index, line){
-              desc.append($("<li>").html(line));
-            });
-          
-            $("<div>", { class: "instance" })
-              .append($("<div>")
-                .append($("<span>", {class: "resume-highlight"}).html(item.organization))
-                .append($("<span>", {class: "resume-placetime"}).html(([item.location, item.time]).join(" | ")))
-              )
-              .append($("<div>").html(item.position))
-              .append(desc)
-              .appendTo("#profession");
-          });
+            $("<div>", { class: "title-2" }).html(item.title).appendTo("#portfolio-content");
+            $("<div>", { class: "summary" }).html(item.type).appendTo("#portfolio-content");
+            var instance = $("<div>", { class: "instance" }).appendTo("#portfolio-content");
+            
+            $("<div>", {class: "description"}).html(item.description).appendTo(instance);
 
-          $.each(data.resume.honor, function(index, item){
-            var instance = $("<div>", { class: "instance" });
-            instance.append($("<div>").html(item.name + " " + item.note));
-            instance.append($("<div>").html(([item.organization, item.time]).join(", ")));
-            $("#honor").append(instance);
+            var demo = $("<div>", {class: "image"}).appendTo(instance);
+            if (item.demo === "gallery") {
+              $.each(item.images, function(index, image){
+                var pic = $("<a>", { href: "images/" + image.name, title: image.title, class: "img"}).attr("data-dialog","").appendTo(demo);
+                pic.append($("<img>", {src: "images/thumbnail/" + image.name, alt: item.title}));
+              });
+            } else if (item.demo === "images") {
+              $.each(item.images, function(index, item){
+                var pic = $("<a>", {href: item.url, target: "_blank"}).appendTo(demo);
+                pic.append($("<img>", {src: item.src, alt: item}));
+              });
+            };
           });
           
-          $.each(data.resume.presentation, function(index, item){
-            var instance = $("<div>", { class: "instance" });
-            instance.append($("<div>").html(item.presentors + ", \"" + item.title + "\""));
-            instance.append($("<div>").html(([item.event, item.location, item.time]).join(", ")));
-            $("#presentation").append(instance);
+          $.each(data.resume, function(index, category){
+            if (category.display === "items") {
+              $("<div>", { class: "title-2" }).html(category.title).appendTo("#resume-content");
+              $.each(category.items, function(index, item){
+                var desc = $("<ul>");
+                $.each(item.description, function(index, line){
+                  desc.append($("<li>").html(line));
+                });
+              
+                $("<div>", { class: "instance" })
+                  .append($("<div>")
+                    .append($("<span>", {class: "resume-highlight"}).html(item.title))
+                    .append($("<span>", {class: "resume-placetime"}).html(([item.location, item.time]).join(" | ")))
+                  )
+                  .append($("<div>").html(item.subtitle))
+                  .append(desc)
+                  .appendTo($("<div>").appendTo("#resume-content"));
+              });
+            };
           });
         });
       });
@@ -257,17 +216,7 @@
       <a id="portfolio"><div class="title-1">Portfolio</div></a>
       <div id="portfolio-content"></div>
       <a id="resume"><div class="title-1">Resume/CV</div></a>
-      <div>
-        <div class="title-2">Education</div>
-        <div id="education"></div>
-        <div class="title-2">Professional Experience</div>
-        <div id="profession"></div>
-        <div class="title-2">Presentations</div>
-        <div id="presentation"></div>
-        <div class="title-2">Awards and Honors</div>
-        <div id="honor"></div>
-      </div>
-    </div>
+      <div id="resume-content"></div>
     
     <!-- The dialog widget -->
     <div id="blueimp-gallery-dialog" data-show="fade" data-hide="fade">
