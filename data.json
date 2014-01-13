@@ -20,33 +20,33 @@
     {
       "title": "Visualization from Scratch: Air Pollutants Mapping",
       "type": "Beginning with collecting first-hand air quality data in the field",
-      "description": "<p>Air pollution mapping requires interpolation from point data. Instead of obtaining observations from existing monitoring stations, in this project we mapped air pollution from scratch - that is, we designed a monitoring network where the distribution of stations is optimized, went into the field to collect first-hand data, and explored the best way to visualize the data. Works included spatial optimization algorithm, experiment design, field particulate matter measurement, and visualization.</p><p>This project, which was proposed and coordinated by me, ultimately involved a interdisciplinary and collaborative effort of two professors and four graduate students with background in GIS, environmental science, physics, etc. It was awarded by Geller's Research Grant at <a href='http://www.clarku.edu/index.cfm' target='_blank'>Clark University</a>.</p><ul><li>Check out <a href='images/air1.png' title='air1' data-dialog>this slide show</a> for a brief project overview</li><li><a href='files/AirQuality_Poster4Research.pdf' target='_blank'>Conference poster</a></li><li><a href='files/Mapping the Concentration of Ambient Air Pollutants for Central Massachusetts.pdf' target='_blank'>Full project report</a></li></ul>",
+      "description": "<p>Air pollution mapping requires interpolation from point data. Instead of obtaining observations from existing monitoring stations, in this project we mapped air pollution from scratch - that is, we designed a monitoring network where the distribution of stations is optimized, went into the field to collect first-hand data, and explored the best way to visualize the data. Works included spatial optimization algorithm, experiment design, field particulate matter measurement, and visualization.</p><p>This project, which was proposed and coordinated by me, ultimately involved a interdisciplinary and collaborative effort of two professors and four graduate students with background in GIS, environmental science, physics, etc. It was awarded by Geller's Research Grant at <a href='http://www.clarku.edu/index.cfm' target='_blank'>Clark University</a>.</p><ul><li>Click any pictures on the right for a brief project overview</li><li><a href='files/AirQuality_Poster4Research.pdf' target='_blank'>Conference poster</a></li><li><a href='files/Mapping the Concentration of Ambient Air Pollutants for Central Massachusetts.pdf' target='_blank'>Full project report</a></li></ul>",
       "name": "air",
       "demo": "gallery",
       "images": [
         {
           "name": "air1.png",
-          "title": "Highway"
+          "title": "The current air pollution monitoring network has only 14 stations in the entire state, and its configuration is not optimized"
         },
         {
           "name": "air2.png",
-          "title": "Highway"
+          "title": "We selected a portion of the state for this study"
         },
         {
           "name": "air3.png",
-          "title": "Highway"
+          "title": "Designing an optimal network: based on previous monitoring data, and allocate stations based on variation"
         },
         {
           "name": "air4.png",
-          "title": "Highway"
+          "title": "Air monitor, GPS unit and laptop were integrated to provide observations with precise spatial components"
         },
         {
           "name": "air5.png",
-          "title": "Highway"
+          "title": "We used several air pollutant monitor to measure the concentration of various chemicals"
         },
         {
           "name": "air6.png",
-          "title": "Highway"
+          "title": "Driving across the study area to obtain measurements"
         }
       ]
     },
@@ -72,27 +72,27 @@
       "images": [
         {
           "name": "eelgrass1.png",
-          "title": "Highway"
+          "title": "Maine, a state in the northestern US with long and curved coastlines"
         },
         {
           "name": "eelgrass2.png",
-          "title": "Highway"
+          "title": "Eelgrass provides nutrition for fish, lobster and other near-shore species"
         },
         {
           "name": "eelgrass3.png",
-          "title": "Highway"
+          "title": "Integration of GPS unit, antenna, underwater camera and the boat"
         },
         {
           "name": "eelgrass4.png",
-          "title": "Highway"
+          "title": "Field trip track logs (the southern section)"
         },
         {
           "name": "eelgrass5.png",
-          "title": "Highway"
+          "title": "Field trip track logs (the northern section)"
         },
         {
           "name": "eelgrass6.png",
-          "title": "Highway"
+          "title": "Visualization on Google Earth with animation (screen shot)"
         }
       ]
     },
@@ -121,43 +121,43 @@
       "images": [
         {
           "name": "construction1.jpg",
-          "title": "Highway"
+          "title": "Highway inside the sea cliff: Suhua Freeway"
         },
         {
           "name": "construction2.jpg",
-          "title": "Highway"
+          "title": "Reservior across watersheds: Hushan Dams"
         },
         {
           "name": "construction3.jpg",
-          "title": "Highway"
+          "title": "Passing through a mountain ridge: from trail to mega-tunnel"
         },
         {
           "name": "construction4.jpg",
-          "title": "Highway"
+          "title": "How a new town changes population distribution"
         },
         {
           "name": "construction5.jpg",
-          "title": "Highway"
+          "title": "Highway in the valley: Huadong Freeway"
         },
         {
           "name": "construction6.jpg",
-          "title": "Highway"
+          "title": "Artificial lake on the plain: the Great Yulin Lake"
         },
         {
           "name": "construction7.jpg",
-          "title": "Highway"
+          "title": "Highway piercing through the 10,000-ft mountain ridge: Zhongheng Freeway"
         },
         {
           "name": "construction8.jpg",
-          "title": "Highway"
+          "title": "Connecting Taiwan and Mainland China with a 80-mile bridge or undersea tunnel"
         },
         {
           "name": "construction9.jpg",
-          "title": "Highway"
+          "title": "Taichung subway green line"
         },
         {
           "name": "construction10.jpg",
-          "title": "Highway"
+          "title": "Consequence of construction: air pollution"
         }
       ]
     },
@@ -324,43 +324,43 @@
       "display": "items",
       "items": [
         {
-          "title": "Five Ways I Make Maps",
-          "subtitle": "Clark Cartography and Geovisualization Talks",
+          "subtitle": "Five Ways I Make Maps",
+          "title": "Clark Cartography and Geovisualization Talks",
           "location": "Worcester, MA",
           "time": "April 2012",
           "description": []
         },
         {
-          "title": "Exploring the Association between Low Birth Weight and Exposure to Air Pollution in Massachusetts: Air Pollution Concentration Monitoring",
-          "subtitle": "Clark Annual Graduate Student Council Multidisciplinary Conference",
+          "subtitle": "Exploring the Association between Low Birth Weight and Exposure to Air Pollution in Massachusetts: Air Pollution Concentration Monitoring",
+          "title": "Clark Annual Graduate Student Council Multidisciplinary Conference",
           "location": "Worcester, MA",
           "time": "April 2012",
           "description": []
         },
         {
-          "title": "Characterizing Factors Associated with Low Birth Weight in Massachusetts Using Geographically Weighted Logistic Regression",
-          "subtitle": "The Spatial Analysis and Modeling (SAM) Specialty Group Student Paper Competition at The Association of American Geographers (AAG) Annual Meeting",
+          "subtitle": "Characterizing Factors Associated with Low Birth Weight in Massachusetts Using Geographically Weighted Logistic Regression",
+          "title": "The Spatial Analysis and Modeling (SAM) Specialty Group Student Paper Competition at The Association of American Geographers (AAG) Annual Meeting",
           "location": "New York, NY",
           "time": "February 2012",
           "description": []
         },
         {
-          "title": "Using IDRISI to Predict Japan's Nuclear Fallout Dispersion in the Pacific Ocean",
-          "subtitle": "International Symposium on Remote Sensing and GIS Methods for Change Detection and Spatio-temporal Modelling (CDSM)",
+          "subtitle": "Using IDRISI to Predict Japan's Nuclear Fallout Dispersion in the Pacific Ocean",
+          "title": "International Symposium on Remote Sensing and GIS Methods for Change Detection and Spatio-temporal Modelling (CDSM)",
           "location": "Hong Kong SAR, China",
           "time": "December 2011",
           "description": []
         },
         {
-          "title": "Exploring the Association between Low Birth Weight and Exposure to Lead Using Geographically Weighted Odds Ratio",
-          "subtitle": "New England - St Lawrence Valley Geographical Association (NESTVAL) Annual Conference",
+          "subtitle": "Exploring the Association between Low Birth Weight and Exposure to Lead Using Geographically Weighted Odds Ratio",
+          "title": "New England - St Lawrence Valley Geographical Association (NESTVAL) Annual Conference",
           "location": "Montreal, QC, Canada",
           "time": "October 2011",
           "description": []
         },
         {
-          "title": "GIS Our Waterways Using Open Source GIS to Develop Interactive Maps for Our Waterways",
-          "subtitle": "Waterkeeper Alliance Annual Conference",
+          "subtitle": "GIS Our Waterways Using Open Source GIS to Develop Interactive Maps for Our Waterways",
+          "title": "Waterkeeper Alliance Annual Conference",
           "location": "Evanston, IL",
           "time": "June 2011",
           "description": []
