@@ -1,19 +1,52 @@
 {
   "about": {
-    "description": "I am a web developer, cartographer and graphic designer. I have an innate passion for collecting, visualizing and analyzing geospatial data as a means to understand the environment and the people in it. Currently working at Esri Inc., I develop, prototype and improve the ArcGIS API for JavaScript and ArcGIS Online to empower people with stronger and better web-based data visualization tools. My hobbies are: travel, biking, hiking, reading and making maps.",
+    "description": "<p>I am a web developer, cartographer and graphic designer. I have an innate passion for collecting, visualizing and analyzing geospatial data as a means to understand the environment and the people in it. Currently working at Esri Inc., I develop, prototype and improve the ArcGIS API for JavaScript and ArcGIS Online to empower people with stronger and better web-based data visualization tools.</p><p><div><b>Areas of Expertise:</b></div><div>GIS, Cartography, JavaScript, Web Mapping, Data Visualization, Spatial Analysis, Crowdsourcing Media</div></p><p><div><b>Hobbies:</b></div><div>Travel, Biking, Hiking, Reading and Making maps</div></p>",
     "photo": "images/profile.jpg"
   },
   "portfolio": [
     {
       "title": "Expanding the Capacity of Web Mapping",
       "type": "Advancing geospatial data visualization technology with <a href='http://www.esri.com/' target='_blank'>Esri, Inc.</a>",
-      "description": "<p>\"Let geographic data tell stories via the Internet\" is this project's goal. As world-wide web becomes the primary media of maps and geographic information, how should traditional maps and cartography evolve to meet the emerging needs and challenges of web mapping?</p><p>Now dot density, proportional symbol, color ramp mapping are all available in the <a href='http://developers.arcgis.com/en/javascript/' target='_blank'>ArcGIS API for JavaScript</a>. Rather than just migrating everything in conventional cartography from papers to browsers, we explored new concepts, new workflows and new visual effects, by which web developers can convey new messages with powerful mapping tools.</p>Demos:<ul><li><a href='vector.html' target='_blank'>One dataset, multiple ways to visualize</a></li><li><a href='vector.html' target='_blank'>Scale-dependent dot density map</a></li><li><a href='vector.html' target='_blank'>Choropleth map without class breaks</a></li></ul>",
+      "description": "<p>\"Let geographic data tell stories via the Internet\" is this project's goal. As world-wide web becomes the primary media of maps and geographic information, <i>how should traditional maps and cartography evolve to meet the emerging needs and challenges of web mapping?</i></p><p>Now dot density, proportional symbol, color ramp mapping are all available in the <a href='http://developers.arcgis.com/en/javascript/' target='_blank'>ArcGIS API for JavaScript</a>. Rather than just migrating everything in conventional cartography from papers to browsers, we explored new concepts, new workflows and new visual effects, by which web developers can convey new messages with powerful mapping tools.</p>Demos:<ul><li><a href='vector.html' target='_blank'>One dataset, multiple ways to visualize</a></li><li><a href='http://developers.arcgis.com/en/javascript/samples/renderer_dot_density_multiple_classes/' target='_blank'>Scale-dependent dot density map</a></li><span class='note'>(A web-based dot-density map I developed. Try zoom in/out to see how the dot value changes with scale.)</span><li><a href='http://developers.arcgis.com/en/javascript/samples/renderer_color_ramp/' target='_blank'>Choropleth map without class breaks</a></li><span class='note'>(No class break anymore - we just map it from the minimum to the maximum!)</span></ul>",
       "name": "vector",
       "demo": "images",
       "images": [
         {
           "src": "images/vector.png",
           "url": "vector.html"
+        }
+      ]
+    },
+    {
+      "title": "Map as a Communication Tool",
+      "type": "Various thematic maps as storytelling media",
+      "description": "<p>A map with good graphic design can convey messages in an informative and vivid way. As both a cartographer and a graphic designer, making maps with proper design is what I am striving for. This section contains maps I made for various projects.</p><ul><li>Click any pictures on the right to view maps</li></ul>",
+      "name": "map",
+      "demo": "gallery",
+      "images": [
+        {
+          "name": "map1.jpg",
+          "title": ""
+        },
+        {
+          "name": "map2.jpg",
+          "title": ""
+        },
+        {
+          "name": "map3.jpg",
+          "title": ""
+        },
+        {
+          "name": "map4.jpg",
+          "title": ""
+        },
+        {
+          "name": "map5.jpg",
+          "title": ""
+        },
+        {
+          "name": "map6.jpg",
+          "title": ""
         }
       ]
     },

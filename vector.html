@@ -10,11 +10,13 @@
         width: 960px;
         margin: 0 auto 0 auto;
         background-color: #000;
+        font-family: Segoe UI;
+        color: #fff;
       }
       .map {
         width: 470px;
         height: 350px;
-        display: inline-block;
+        /*display: inline-block;*/
       }
     </style>
     <script src="http://js.arcgis.com/3.8/"></script>
@@ -48,6 +50,7 @@
         };
         
         var layer1 = new FeatureLayer(fsUrl, fsConfig);
+        layer1.setDefinitionExpression("POP2007>10000");
         var layer2 = new FeatureLayer(fsUrl, fsConfig);
         var layer3 = new FeatureLayer(fsUrl, fsConfig);
         var layer4 = new FeatureLayer(fsUrl, fsConfig);
@@ -86,7 +89,7 @@
           dotSize: 2
         }));
         
-        //map1.addLayer(layer1);
+        map1.addLayer(layer1);
         map2.addLayer(layer2);
         map3.addLayer(layer3);
         map4.addLayer(layer4);
@@ -96,9 +99,15 @@
   </head>
 
   <body>
+    <h1>One Dataset, Multiple Ways to Visualize</h1>
+    <p>Cartographers have been using a variety of ways to convey information via maps. Variation of size, color or/and density forms the story line of maps. As all these become available online, geographic information becomes more interactive and responsive. This demo presents some of these new visualization tools we developed in our JavaScript API. The same dataset (population by county in 2007) is mapped in various ways.</p>
+    <p>1. Values only. No symbol.</p>
     <div id="map1" class="map"></div>
+    <p>2. Variation of size: proportional symbol.</p>
     <div id="map2" class="map"></div>
+    <p>3. Variation of color: color ramp.</p>
     <div id="map3" class="map"></div>
+    <p>3. Variation of density: dot density map.</p>
     <div id="map4" class="map"></div>
   </body>
 </html>
