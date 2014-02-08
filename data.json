@@ -233,31 +233,36 @@
       "items": [
         {
           "title": "Esri Inc.",
-          "subtitle": "Product Engineer",
+          "subtitle": "Product Engineer (JavaScript)",
           "location": "Redlands, CA",
           "time": "2012-present",
           "description": [
-            "Developed and tested ArcGIS API for JavaScript (v3.1 - v3.8), ArcGIS.com.",
-            "Prototyped and documented JavaScript applications for ArcGIS users."
+            "Developed and prototyped web mapping applications with extensive web programming (HTML5, JavaScript, CSS3, AJAX, D3.js, Dojo, etc).",
+            "Developed, tested and promoted ArcGIS API for JavaScript (v3.1 - v3.8): documentation, conference presentation, ect.",
+            "Designed UI for the symbol configuration in ArcGIS.com map viewer",
+            "Researched prospective web map advancement, such as web-based dot density map renderering, color ramp map renderering, etc."
           ]
         },
         {
           "title": "Esri Inc.",
-          "subtitle": "Intern",
+          "subtitle": "Intern (JavaScript)",
           "location": "Redlands, CA",
           "time": "2012",
           "description": [
-            "Tested ArcGIS API for JavaScript v3.0 and ArcGIS.com."
+            "Tested ArcGIS API for JavaScript v3.0 and ArcGIS.com.",
+            "Automated documentation generation process with Python, HTML5 and Visual Studio Intellisense.",
+            "Prototyped and documented JavaScript applications for ArcGIS users."
           ]
         },
         {
           "title": "Center for Geographic Analysis, Harvard University",
-          "subtitle": "GIS Analyst",
+          "subtitle": "GIS Analyst (WorldMap)",
           "location": "Cambridge, MA",
           "time": "2011-2012",
           "description": [
             "Visualized world demographic and religious data on the WorldMap web mapping platform.",
-            "Automating the process of parsing and integrating data from multiple sources using Python script."
+            "Automated the process of parsing and integrating data from multiple sources using Python script.",
+            "Assisted Harvard faculty to leverage web GIS technology for academic research."
           ]
         },
         {
