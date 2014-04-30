@@ -209,6 +209,13 @@
               });
             };
           });
+          
+          var dialog = $("#dialog").dialog({
+            autoOpen: false
+          });
+          $("<div>").html("fnejkrnfw").click(function(){
+            dialog.html("frgenjkrwg" + new Date()).dialog("open");
+          }).appendTo("#about-content");
         });
       });
     </script>
@@ -234,6 +241,9 @@
       <div id="portfolio-content"></div>
       <a id="resume"><div class="title-1">Resume/CV</div></a>
       <div id="resume-content"></div>
+    </div>
+      
+    <div id="dialog"></div>
     
     <!-- The dialog widget -->
     <div id="blueimp-gallery-dialog" data-show="fade" data-hide="fade">
