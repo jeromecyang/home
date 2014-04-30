@@ -11,15 +11,19 @@
           };
         });
         console.log(code);
-        $.post("https://www.linkedin.com/uas/oauth2/accessToken", {
-          grant_type: "authorization_code",
-          code: code,
-          redirect_uri: "https://jeromecyang.github.io/home/test-linkedin.html",
-          client_id: "75fn03s6q7khuu",
-          client_secret: "o68rZ0iGMkRjueH2"
-        }, function(data){
-          console.log(data);
-        }, "json");
+        $.ajax({
+          type: "POST",
+          url: "https://www.linkedin.com/uas/oauth2/accessToken",
+          dataType: "jsonp",
+          data: {
+            grant_type: "authorization_code",
+            code: code,
+            redirect_uri: "https://jeromecyang.github.io/home/test-linkedin.html",
+            client_id: "75fn03s6q7khuu",
+            client_secret: "o68rZ0iGMkRjueH2"
+          },
+          success: function(res){ console.log(res) }
+        });
       });
     </script>
   </head>
