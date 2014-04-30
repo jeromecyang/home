@@ -10,6 +10,7 @@
             code = a.split("=")[1];
           };
         });
+        console.log(code);
         $.post("https://www.linkedin.com/uas/oauth2/accessToken", {
           grant_type: "authorization_code",
           code: code,
