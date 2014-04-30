@@ -10,7 +10,7 @@
             code = a.split("=")[1];
           };
         });
-        console.log(code);
+        console.log("https://www.linkedin.com/uas/oauth2/accessToken?code=" + code + "&grant_type=authorization_code&redirect_uri=https://jeromecyang.github.io/home/test-linkedin.html&client_id=75fn03s6q7khuu&client_secret=o68rZ0iGMkRjueH2");
         $.ajax({
           type: "POST",
           url: "https://www.linkedin.com/uas/oauth2/accessToken",
