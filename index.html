@@ -40,7 +40,7 @@
             var demo = $("<div>", {class: "image"}).appendTo(instance);
             if (item.demo === "gallery") {
               $.each(item.images, function(index, image){
-                var pic = $("<a>", { href: "images/" + image.name, class: "img"}).attr("data-lightbox","lightboxc").attr("data-title",image.title).appendTo(demo);
+                var pic = $("<a>", { href: "images/" + image.name, class: "img"}).attr("data-lightbox",item.name).attr("data-title",image.title).appendTo(demo);
                 pic.append($("<img>", {src: "images/thumbnail/" + image.name, alt: item.title}));
               });
             } else if (item.demo === "images") {
