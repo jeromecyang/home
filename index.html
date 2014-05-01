@@ -4,148 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
     <title>Jerome Yang</title>
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css" id="theme">
-    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <style>
-      #main {
-        width: 960px;
-        margin: 0 auto 0 auto;
-      }
-      #nav-bar {
-        position: relative;
-        margin-left: 700px;
-        font: 11px Segoe UI;
-        background-color: #eee;
-        color: #888;
-        padding: 5px;
-        border-radius: 0 0 5px 5px;
-      }
-      #front-page {
-        display: table;
-        width: 100%;
-      }
-      #front-content {
-        text-align: center;
-        display: table-cell;
-        vertical-align: middle;
-        font-family: Segoe UI;
-      }
-      #front-content a, #nav-bar a {
-        color: #000;
-        text-decoration: none;
-      }
-      #front-content a:hover, #nav-bar a:hover {
-        text-decoration: underline;
-      }
-      .header {
-        font-size: 54px;
-        font-family: Georgia;
-        margin: auto;
-      }
-      #contact {
-        font-size: 11px;
-        font-family: Segoe UI;
-      }
-      .title-1 {
-        font-size: 60px;
-        font-family: Segoe UI Light;
-        margin-top: 24px;
-        text-align: center;
-      }
-      .title-2 {
-        font-size: 28px;
-        font-family: Impact;
-        color: #666;
-        margin-top: 18px;
-      }
-      .summary {
-        font: 14px Comic Sans MS;
-        color: #888;
-      }
-      .summary a {
-        color: #888;
-        border-bottom: 1px dashed #888;
-        text-decoration: none;
-      }
-      .summary a:hover {
-        border-bottom: 1px solid #888;
-      }
-      .instance {
-        font-family: Segoe UI;
-        margin: 0 0 10px 0;
-      }
-      .image {
-        width: 320px;
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 20px;
-      }
-      .description {
-        width: 620px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 20px;
-      }
-      .description a {
-        color: #000;
-        border-bottom: 1px dashed #000;
-        text-decoration: none;
-      }
-      .description a:hover {
-        border-bottom: 1px solid #000;
-      }
-      .description p {
-        /*text-indent: 20px;*/
-      }
-      .note {
-        font-size: 12px;
-        color: #888;
-      }
-      #about-content {
-        font-family: Segoe UI;
-        /*text-indent: 20px;*/
-        display: inline-block;
-        width: 690px;
-        vertical-align: top;
-        margin-left: 20px;
-      }
-      #about-photo {
-        margin-top: 40px;
-        display: inline-block;
-        width: 240px;
-        vertical-align: top;
-      }
-      .resume-highlight {
-        margin-top: 20px;
-        font-family: Segoe UI Bold;
-        font-weight: 900;
-      }
-      .resume-placetime {
-        margin-left: 15px;
-        font-size: 11px;
-        color: #fff;
-        background-color: #aaa;
-        padding: 2px 4px;
-        border-radius: 2px;
-      }
-      .ui-dialog-title {
-        font: 12px Segoe UI;
-        text-overflow: clip !important;
-        white-space: normal !important;
-        overflow: visible !important;
-      }
-      #resume-content ul {
-        margin: 7px 0 20px 0;
-      }
-      #resume-content li {
-        font-size: 14px;
-        list-style-type: circle;
-      }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-    <script src="js/jquery.image-gallery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script>
       $(document).ready(function() {
         $("#front-page").css({"height":$(window).height()+"px"});
@@ -178,7 +40,7 @@
             var demo = $("<div>", {class: "image"}).appendTo(instance);
             if (item.demo === "gallery") {
               $.each(item.images, function(index, image){
-                var pic = $("<a>", { href: "images/" + image.name, title: image.title, class: "img"}).attr("data-dialog","").appendTo(demo);
+                var pic = $("<a>", { href: "images/" + image.name, class: "img"}).attr("data-lightbox","lightboxc").attr("data-title",image.title).appendTo(demo);
                 pic.append($("<img>", {src: "images/thumbnail/" + image.name, alt: item.title}));
               });
             } else if (item.demo === "images") {
@@ -209,13 +71,6 @@
               });
             };
           });
-          
-          var dialog = $("#dialog").dialog({
-            autoOpen: false
-          });
-          $("<div>").html("fnejkrnfw").click(function(){
-            dialog.html("frgenjkrwg" + new Date()).dialog("open");
-          }).appendTo("#about-content");
         });
       });
     </script>
@@ -241,19 +96,6 @@
       <div id="portfolio-content"></div>
       <a id="resume"><div class="title-1">Resume/CV</div></a>
       <div id="resume-content"></div>
-    </div>
-      
-    <div id="dialog"></div>
-    
-    <!-- The dialog widget -->
-    <div id="blueimp-gallery-dialog" data-show="fade" data-hide="fade">
-      <!-- The gallery widget  -->
-      <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
-        <div class="slides"></div>
-        <a class="prev">&lt;</a>
-        <a class="next">&gt;</a>
-        <a class="play-pause"></a>
-      </div>
     </div>
   </body>
 </html>
