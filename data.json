@@ -1,0 +1,414 @@
+{
+  "about": {
+    "description": "<p>I am a web developer, cartographer and graphic designer. I have an innate passion for collecting, visualizing and analyzing geospatial data as a means to understand the environment and the people in it. Currently working at Esri Inc., I develop, prototype and improve the ArcGIS API for JavaScript and ArcGIS Online to empower people with stronger and better web-based data visualization tools.</p><p><div><b>Areas of Expertise:</b></div><div>GIS, Cartography, JavaScript, Web Mapping, Data Visualization, Spatial Analysis, Crowdsourcing Media</div></p><p><div><b>Hobbies:</b></div><div>Travel, Biking, Hiking, Reading and Making maps</div></p>",
+    "photo": "images/profile.jpg"
+  },
+  "portfolio": [
+    {
+      "title": "Expanding the Capacity of Web Mapping",
+      "type": "Advancing geospatial data visualization technology with <a href='http://www.esri.com/' target='_blank'>Esri, Inc.</a>",
+      "description": "<p>\"Let geographic data tell stories via the Internet\" is this project's goal. As world-wide web becomes the primary media of maps and geographic information, <i>how should traditional maps and cartography evolve to meet the emerging needs and challenges of web mapping?</i></p><p>Now dot density, proportional symbol, color ramp mapping are all available in the <a href='http://developers.arcgis.com/en/javascript/' target='_blank'>ArcGIS API for JavaScript</a>. Rather than just migrating everything in conventional cartography from papers to browsers, we explored new concepts, new workflows and new visual effects, by which web developers can convey new messages with powerful mapping tools.</p>Demos:<ul><li><a href='vector.html' target='_blank'>One dataset, multiple ways to visualize</a></li><li><a href='http://developers.arcgis.com/en/javascript/samples/renderer_dot_density_multiple_classes/' target='_blank'>Scale-dependent dot density map</a></li><span class='note'>(A web-based dot-density map I developed. Try zoom in/out to see how the dot value changes with scale.)</span><li><a href='http://developers.arcgis.com/en/javascript/samples/renderer_color_ramp/' target='_blank'>Choropleth map without class breaks</a></li><span class='note'>(No class break anymore - we just map it from the minimum to the maximum!)</span></ul>",
+      "name": "vector",
+      "demo": "images",
+      "images": [
+        {
+          "src": "images/vector.png",
+          "url": "vector.html"
+        }
+      ]
+    },
+    {
+      "title": "Map as a Communication Tool",
+      "type": "Various thematic maps as storytelling media",
+      "description": "<p>A map with good graphic design can convey messages in an informative and vivid way. As both a cartographer and a graphic designer, making maps with proper design is what I am striving for. This section contains maps I made for various projects.</p><ul><li>Click any pictures on the right to view maps</li></ul>",
+      "name": "map",
+      "demo": "gallery",
+      "images": [
+        {
+          "name": "map1.jpg",
+          "title": ""
+        },
+        {
+          "name": "map2.jpg",
+          "title": ""
+        },
+        {
+          "name": "map3.jpg",
+          "title": ""
+        },
+        {
+          "name": "map4.jpg",
+          "title": ""
+        },
+        {
+          "name": "map5.jpg",
+          "title": ""
+        },
+        {
+          "name": "map6.jpg",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "title": "Visualization from Scratch: Air Pollutants Mapping",
+      "type": "Beginning with collecting first-hand air quality data in the field",
+      "description": "<p>Air pollution mapping requires interpolation from point data. Instead of obtaining observations from existing monitoring stations, in this project we mapped air pollution from scratch - that is, we designed a monitoring network where the distribution of stations is optimized, went into the field to collect first-hand data, and explored the best way to visualize the data. Works included spatial optimization algorithm, experiment design, field particulate matter measurement, and visualization.</p><p>This project, which was proposed and coordinated by me, ultimately involved a interdisciplinary and collaborative effort of two professors and four graduate students with background in GIS, environmental science, physics, etc. It was awarded by Geller's Research Grant at <a href='http://www.clarku.edu/index.cfm' target='_blank'>Clark University</a>.</p><ul><li>Click any pictures on the right for a brief project overview</li><li><a href='files/AirQuality_Poster4Research.pdf' target='_blank'>Conference poster</a></li><li><a href='files/Mapping the Concentration of Ambient Air Pollutants for Central Massachusetts.pdf' target='_blank'>Full project report</a></li></ul>",
+      "name": "air",
+      "demo": "gallery",
+      "images": [
+        {
+          "name": "air1.png",
+          "title": "The current air pollution monitoring network has only 14 stations in the entire state, and its configuration is not optimized"
+        },
+        {
+          "name": "air2.png",
+          "title": "We selected a portion of the state for this study"
+        },
+        {
+          "name": "air3.png",
+          "title": "Designing an optimal network: based on previous monitoring data, and allocate stations based on variation"
+        },
+        {
+          "name": "air4.png",
+          "title": "Air monitor, GPS unit and laptop were integrated to provide observations with precise spatial components"
+        },
+        {
+          "name": "air5.png",
+          "title": "We used several air pollutant monitor to measure the concentration of various chemicals"
+        },
+        {
+          "name": "air6.png",
+          "title": "Driving across the study area to obtain measurements"
+        }
+      ]
+    },
+    {
+      "title": "AfricaMap",
+      "type": "Web-based geospatial data visualization in collaboration with the <a href='http://worldmap.harvard.edu/africamap' target='_blank'>Center for Geographic Analysis, Harvard University</a>",
+      "description": "<p><a href='http://worldmap.harvard.edu/africamap' target='_blank'>AfricaMap</a> is an open-source web mapping platform designated for archiving, visualizing and integrating geospatial statistics particularly for Africa. One can easily find statistics from various organizations and governments, but <i>how do we fit them together in one single platform?</i></p><p>As a GIS analyst at <a href='http://gis.harvard.edu/icb/icb.do' target='_blank'>Center for Geographic Analysis (CGA), Harvard University</a>, I worked with African-Art-and-Architecture historian <a href='http://aaas.fas.harvard.edu/directory/faculty/suzanne-p-blier' target='_blank'>Dr. Suzanne P. Blier</a> to retrieve statistics from various sources, and explored the options to make these number \"visible\" on map. To handle data in various formats and qualities, I employed my fimilarity with data syntax and skills in programming for text processing to handle the data effectively and accurately. This is an ongoing project and all results are available at http://worldmap.harvard.edu/africamap.</p><ul><li><a href='http://worldmap.harvard.edu/africamap' target='_blank'>AfricaMap</a></li><li><a href='http://www.neh.gov/divisions/odh/grant-news/announcing-6-digital-humanities-implementation-grant-awards-july-2013' target='_blank'>Announcing 6 Digital Humanities Implementation Grant Awards (July 2013)</a></li></ul>",
+      "name": "africa",
+      "demo": "images",
+      "images": [
+        {
+          "src": "images/africa.png",
+          "url": "http://worldmap.harvard.edu/africamap/"
+        }
+      ]
+    },
+    {
+      "title": "GIS off the Shore: Eelgrass Mapping",
+      "type": "Getting GIS on board with the <a href='http://www.maine.gov/dmr/index.htm' target='_blank'>Maine Department of Marine Resources</a>",
+      "description": "<p>Eelgrass (<i>Zostera</i>) is an vital species in coastal ecosystems. It provides nutritions for many shallow ocean animals, and consequently sustains the fishery economy in the state of Maine. The goal of <a href='http://www.maine.gov/dmr/rm/eelgrass/index.htm' target='_blank'>eelgrass mapping</a> is to investigate, monitor and visualize eelgrass distribution.</p><p>Before entering the field, potential eelgrass patches were identified on low-tide aerial imagery and digitized in ArcGIS. While in the field, we drove a boat, navigated by ArcPad to visit every location we identified, and recorded the actual condition with notes, GPS tracklogs, photos and videos. After the field work, the data collected were summarized and released as public-accessible information in a web mapping application.</p><ul><li>Click any pictures on the right for a brief project overview</li></ul>",
+      "name": "eelgrass",
+      "demo": "gallery",
+      "images": [
+        {
+          "name": "eelgrass1.png",
+          "title": "Maine, a state in the northestern US with long and curved coastlines"
+        },
+        {
+          "name": "eelgrass2.png",
+          "title": "Eelgrass provides nutrition for fish, lobster and other near-shore species"
+        },
+        {
+          "name": "eelgrass3.png",
+          "title": "Integration of GPS unit, antenna, underwater camera and the boat"
+        },
+        {
+          "name": "eelgrass4.png",
+          "title": "Field trip track logs (the southern section)"
+        },
+        {
+          "name": "eelgrass5.png",
+          "title": "Field trip track logs (the northern section)"
+        },
+        {
+          "name": "eelgrass6.png",
+          "title": "Visualization on Google Earth with animation (screen shot)"
+        }
+      ]
+    },
+    {
+      "title": "Web GIS Crowd-sourcing",
+      "type": "Developing interactive, collaborative web mapping applications",
+      "description": "<p>Internet provides an effective way for multiple people to contribute geospatial data to one database. I participated in two crowd-sourcing GIS projects.</p><p><b>Maine Elver Map</b> was designed for marine patrol officers to report locations where illegal harvesting of elvers (young eels) were found. It successfully gathered 85 locations reported by about 10 officers. It employed Google Maps API and Google Fusion Table to provide a user interface and a publicly accessible database. Any input data was immediately reviewed by administrators via email to ensure the quality of the data.</p><p><a href='http://www.qiantangriver.org/' target='_blank'>QianTang River Map</a> was built to gather succeptible water pollution activities along the river. This project was initiated by <a href='http://www.greenzj.com/' target='_blank'>Green Zhejiang</a>, an environmental protection NGO in China. I worked as the primary technical lead to implement the system. Built upon <a href='http://www.ushahidi.com/' target='_blank'>Ushahidi's CrowdMap</a> platform, it leverages open-source tools to provide a zero-cost and easy-to-use solution to the NGO's need for crowd-sourcing.</p>",
+      "name": "crowdsource",
+      "demo": "images",
+      "images": [
+        {
+          "src": "images/crowdsource1.png",
+          "url": ""
+        },{
+          "src": "images/crowdsource2.png",
+          "url": "http://www.qiantangriver.org/"
+        }
+      ]
+    },
+    {
+      "title": "When Something is Built...",
+      "type": "3D terrian visualization of prospective constructions",
+      "description": "<p>In the beginning of the 21st century, Taiwan government proposed several \"mega projects\", including a highway crossing a 10,000-ft mountain ridge, a 4000-acre artificial reservoir for industrial water supply, etc.</p><p>To simulate these projects' impact on the landscapes, I independently created 12 3-D visualization scenes to give the public a chance to \"preview\" the changed landscapes when the construction is complete. These scenes were made by scanning and georeferencing maps from the project plans, retrieving Google's sattelite imagery, overlaying data with digital terrain model (DTM) in ArcScene, and post-export editing with Corel PhotoImpact.</p>",
+      "name": "construction",
+      "demo": "gallery",
+      "images": [
+        {
+          "name": "construction1.jpg",
+          "title": "Highway inside the sea cliff: Suhua Freeway"
+        },
+        {
+          "name": "construction2.jpg",
+          "title": "Reservior across watersheds: Hushan Dams"
+        },
+        {
+          "name": "construction3.jpg",
+          "title": "Passing through a mountain ridge: from trail to mega-tunnel"
+        },
+        {
+          "name": "construction4.jpg",
+          "title": "How a new town changes population distribution"
+        },
+        {
+          "name": "construction5.jpg",
+          "title": "Highway in the valley: Huadong Freeway"
+        },
+        {
+          "name": "construction6.jpg",
+          "title": "Artificial lake on the plain: the Great Yulin Lake"
+        },
+        {
+          "name": "construction7.jpg",
+          "title": "Highway piercing through the 10,000-ft mountain ridge: Zhongheng Freeway"
+        },
+        {
+          "name": "construction8.jpg",
+          "title": "Connecting Taiwan and Mainland China with a 80-mile bridge or undersea tunnel"
+        },
+        {
+          "name": "construction9.jpg",
+          "title": "Taichung subway green line"
+        },
+        {
+          "name": "construction10.jpg",
+          "title": "Consequence of construction: air pollution"
+        }
+      ]
+    },
+    {
+      "title": "\"Bridge\" the Green Gap",
+      "type": "Landscape Design",
+      "description": "Coming soon"
+    }
+  ],
+  "resume": [
+    {
+      "title": "Education",
+      "display": "items",
+      "items": [
+        {
+          "title": "Clark University",
+          "subtitle": "Master of Science in Geographic Information Science for Development and Environment",
+          "location": "Worcester, MA",
+          "time": "2010-2012",
+          "description": [
+            "GPA: <b>4.03</b>/4.00",
+            "Web mapping, participatory GIS, air pollution mapping, spatial epidemiology, spatial statistics"
+          ]
+        },
+        {
+          "title": "National Taiwan University",
+          "subtitle": "Bachelor of Science in Geography (with a minor in sociology)",
+          "location": "Taipei, Taiwan",
+          "time": "2005-2009",
+          "description": [
+            "GPA: <b>3.96</b>/4.00 (or 89.5/100; ranked 1st in a class of 36)",
+            "Focus: Cartography, GIS, urban geography, spatiotemporal analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Professional Experience",
+      "display": "items",
+      "items": [
+        {
+          "title": "Esri Inc.",
+          "subtitle": "Product Engineer (JavaScript)",
+          "location": "Redlands, CA",
+          "time": "2012-present",
+          "description": [
+            "Developed and prototyped web mapping applications with extensive web programming (HTML5, JavaScript, CSS3, AJAX, D3.js, Dojo, etc).",
+            "Developed, tested and promoted ArcGIS API for JavaScript (v3.1 - v3.8): documentation, conference presentation, ect.",
+            "Designed UI for the symbol configuration in ArcGIS.com map viewer",
+            "Researched prospective web map advancement, such as web-based dot density map renderering, color ramp map renderering, etc."
+          ]
+        },
+        {
+          "title": "Esri Inc.",
+          "subtitle": "Intern (JavaScript)",
+          "location": "Redlands, CA",
+          "time": "2012",
+          "description": [
+            "Tested ArcGIS API for JavaScript v3.0 and ArcGIS.com.",
+            "Automated documentation generation process with Python, HTML5 and Visual Studio Intellisense.",
+            "Prototyped and documented JavaScript applications for ArcGIS users."
+          ]
+        },
+        {
+          "title": "Center for Geographic Analysis, Harvard University",
+          "subtitle": "GIS Analyst (WorldMap)",
+          "location": "Cambridge, MA",
+          "time": "2011-2012",
+          "description": [
+            "Visualized world demographic and religious data on the WorldMap web mapping platform.",
+            "Automated the process of parsing and integrating data from multiple sources using Python script.",
+            "Assisted Harvard faculty to leverage web GIS technology for academic research."
+          ]
+        },
+        {
+          "title": "Maine Department of Marine Resources",
+          "subtitle": "GIS Technician",
+          "location": "Boothbay Harbor, ME",
+          "time": "2011",
+          "description": [
+            "Used Trimble GeoExplorer 2008 and ArcPad 10.0 to validate the accuracy of seagrass maps (groundtruthing).",
+            "Developed an API-based web map application for the Maine Marine Patrol officers to report the locations of young eel harvesting activities online.",
+            "Managed governmental spatial data of the government among multiple File Geodatabase (FGDB) and ArcSDE data servers."
+          ]
+        },
+        {
+          "title": "National Children's Study",
+          "subtitle": "Research Assistant",
+          "location": "Worcester, MA",
+          "time": "2011",
+          "description": [
+            "Visualized statistics (US Census and American Community Survey) and established spatial database for study area.",
+            "Integrated GPS tracker, Garmin application, and Google Earth to provide dynamic map for field investigation."
+          ]
+        },
+        {
+          "title": "GISDE Lab., Clark University",
+          "subtitle": "GIS Lab Manager",
+          "location": "Worcester, MA",
+          "time": "2011",
+          "description": [
+            "Provided technical support (desktop, printer, and GIS software) for 40 master's students.",
+            "Collected and updated the information of GIS conferences, jobs, and resources; sustained a GIS resource website."
+          ]
+        },
+        {
+          "title": "Map and Multimedia Lab., National Taiwan University",
+          "subtitle": "Cartographer and Map Editor",
+          "location": "Taipei, Taiwan",
+          "time": "2008-2009",
+          "description": [
+            "Illustrated and edited maps for an annual map calendar (print volume: 3,000) to promote geographical education.",
+            "Displayed data on maps for conference posters and a textbook by ArcGIS 9.2 and Adobe Illustrator CS3."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Awards and Honors",
+      "display": "items",
+      "items": [
+        {
+          "title": "Geller Student Research Award",
+          "subtitle": "Marsh Institute, Clark University",
+          "location": "Worcester, MA",
+          "time": "2011",
+          "description": [
+            "Amount: USD 2,250."
+          ]
+        },
+        {
+          "title": "Student Paper Award 1st Prize",
+          "subtitle": "New England-Saint Lawrence Valley Geographical Society",
+          "location": "Montreal, QC, Canada",
+          "time": "2011",
+          "description": []
+        },
+        {
+          "title": "IDCE Department Fellowship",
+          "subtitle": "Clark University",
+          "location": "Worcester, MA",
+          "time": "2010-2012",
+          "description": [
+            "50% tuition remission"
+          ]
+        },
+        {
+          "title": "Presidential Award",
+          "subtitle": "National Taiwan University",
+          "location": "Taipei, Taiwan",
+          "time": "2006, 2007, 2008, 2009",
+          "description": [
+            "Top 5% in department. Awarded in six out of eight semesters."
+          ]
+        },
+        {
+          "title": "Dean's Award",
+          "subtitle": "National Taiwan University",
+          "location": "Taipei, Taiwan",
+          "time": "2009",
+          "description": [
+            "Top 10% in graduating class"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Talks and Presentations",
+      "display": "items",
+      "items": [
+        {
+          "subtitle": "Five Ways I Make Maps",
+          "title": "Clark Cartography and Geovisualization Talks",
+          "location": "Worcester, MA",
+          "time": "April 2012",
+          "description": []
+        },
+        {
+          "subtitle": "Exploring the Association between Low Birth Weight and Exposure to Air Pollution in Massachusetts: Air Pollution Concentration Monitoring",
+          "title": "Clark Annual Graduate Student Council Multidisciplinary Conference",
+          "location": "Worcester, MA",
+          "time": "April 2012",
+          "description": []
+        },
+        {
+          "subtitle": "Characterizing Factors Associated with Low Birth Weight in Massachusetts Using Geographically Weighted Logistic Regression",
+          "title": "The Spatial Analysis and Modeling (SAM) Specialty Group Student Paper Competition at The Association of American Geographers (AAG) Annual Meeting",
+          "location": "New York, NY",
+          "time": "February 2012",
+          "description": []
+        },
+        {
+          "subtitle": "Using IDRISI to Predict Japan's Nuclear Fallout Dispersion in the Pacific Ocean",
+          "title": "International Symposium on Remote Sensing and GIS Methods for Change Detection and Spatio-temporal Modelling (CDSM)",
+          "location": "Hong Kong SAR, China",
+          "time": "December 2011",
+          "description": []
+        },
+        {
+          "subtitle": "Exploring the Association between Low Birth Weight and Exposure to Lead Using Geographically Weighted Odds Ratio",
+          "title": "New England - St Lawrence Valley Geographical Association (NESTVAL) Annual Conference",
+          "location": "Montreal, QC, Canada",
+          "time": "October 2011",
+          "description": []
+        },
+        {
+          "subtitle": "GIS Our Waterways Using Open Source GIS to Develop Interactive Maps for Our Waterways",
+          "title": "Waterkeeper Alliance Annual Conference",
+          "location": "Evanston, IL",
+          "time": "June 2011",
+          "description": []
+        }
+      ]
+    },
+    {
+      "title": "Research Papers",
+      "display": "items",
+      "items": []
+    }
+  ]
+}
