@@ -1,7 +1,7 @@
 {
   "about": {
     "description": "<p>I am a web developer, cartographer and graphic designer. I have an innate passion for collecting, visualizing and analyzing geospatial data as a means to understand the environment and the people in it. Currently working at Esri Inc., I develop, prototype and improve the ArcGIS API for JavaScript and ArcGIS Online to empower people with stronger and better web-based data visualization tools.</p><p><div><b>Areas of Expertise:</b></div><div>GIS, Cartography, JavaScript, Web Mapping, Data Visualization, Spatial Analysis, Crowdsourcing Media</div></p><p><div><b>Hobbies:</b></div><div>Travel, Biking, Hiking, Reading and Making maps</div></p>",
-    "photo": "images/profile.jpg"
+    "photo": "https://media.licdn.com/media/p/7/005/065/178/1ad2433.jpg"
   },
   "portfolio": [
     {
