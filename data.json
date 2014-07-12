@@ -1,7 +1,7 @@
 {
   "about": {
-    "description": "<p>I am a web developer, cartographer and graphic designer. I have an innate passion for collecting, visualizing and analyzing geospatial data as a means to understand the environment and the people in it. Currently working at Esri Inc., I develop, prototype and improve the ArcGIS API for JavaScript and ArcGIS Online to empower people with stronger and better web-based data visualization tools.</p><p><div><b>Areas of Expertise:</b></div><div>GIS, Cartography, JavaScript, Web Mapping, Data Visualization, Spatial Analysis, Crowdsourcing Media</div></p><p><div><b>Hobbies:</b></div><div>Travel, Biking, Hiking, Reading and Making maps</div></p>",
-    "photo": "images/profile.jpg"
+    "description": "Jerome is a:<ul><li><b>Web Developer</b>, with solid experience in jQuery, Dojo, Angular.js, Bootstrap, D3.js, etc</li><li><b>UI/UX Designer/Developer</b>, able to create succinct, comprehensible and informative interface</li><li><b>Technical Writer/Evangelist</b>, writing documentation, posting on blogs and presenting at conferences</li><li><b>Data Analyst</b>, having deep statistic knowledge and strong Python skill</li><li><b>Cartographer</b>, creating aesthetic geospatial visualization on the web and paper</li><li><b>Teamwork Leader and Communicator</b>, loving to work in an innovative and collaborative environment</li></ul>",
+    "photo": "https://media.licdn.com/media/p/7/005/065/178/1ad2433.jpg"
   },
   "portfolio": [
     {
