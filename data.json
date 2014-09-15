@@ -6,8 +6,8 @@
   "portfolio": [
     {
       "title": "Data Visualization with ArcGIS API for JavaScript",
-      "type": "blah blah blah",
-      "description": "lalalala"
+      "type": "A set of web developer tools to create fancier and more informative visualization",
+      "description": "<p>Throughout the years of 2013 and 2014, we significantly expanded our web mapping platform with more intuitive, comprehensive and east-to-use API for developers. Now a pretty dot density map or a choropleth with opacity variation can take only a few lines of code. While many customers have taken these new tools to create their own cool pieces, we also built a bunch of pretty demos to prototype, to inspire and to explore the future of geospatial data visualization.</p><ul><b>My blog posts</b><li><a href='http://blogs.esri.com/esri/arcgis/2014/09/05/data-visualization-with-arcgis-api-for-javascript/' target='_blank'>Data visualization with ArcGIS API for JavaScript</a></li><li><a href='http://blogs.esri.com/esri/arcgis/2014/09/11/data-visualization-with-arcgis-api-for-javascript-show-data-by-unique-value/' target='_blank'>Data Visualization with ArcGIS API for JavaScript: Show Data by Unique Value</a></li></ul><ul><b>My conference videos</b><li><a href='http://video.esri.com/watch/3840/whats-new-for-arcgis-api-for-javascript' target='_blank'>What's New for ArcGIS API for JavaScript (2014)</a></li><li><a href='http://video.esri.com/watch/3843/arcgis-api-for-javascript_comma_-mapping-and-visualization' target='_blank'>ArcGIS API for JavaScript, Mapping and Visualization</a></li></ul>"
     },
     {
       "title": "Front-End Development: Self-Service Mapping",
