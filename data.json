@@ -7,8 +7,12 @@
     {
       "title": "Data Visualization with ArcGIS API for JavaScript",
       "type": "blah blah blah",
-      "description": "lalalala",
-      "name": "visualization"
+      "description": "lalalala"
+    },
+    {
+      "title": "Front-End Development: Self-Service Mapping",
+      "type": "A smarter system making maps from your data",
+      "description": "<p>\"We want to go one step further for you\" is the motication of this project. Instead of letting you set visualization method, color, symbol, etc step by step, ArcGIS.com is now going one step further for you. We analyze your data and recommend good ways to visualize them for you. By no means this means you lose your control over your visualization, but our smart default will make your visualization production process quicker and more enjoyable.</p><p>This innovative system will be revealed with the November 2014 ArcGIS.com release. However, the concept, UI/UX design and prototypes have been made public:</p></p>"
     },
     {
       "title": "Expanding the Capacity of Web Mapping",
