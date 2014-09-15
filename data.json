@@ -5,6 +5,12 @@
   },
   "portfolio": [
     {
+      "title": "Data Visualization with ArcGIS API for JavaScript",
+      "type": "blah blah blah",
+      "description": "lalalala",
+      "name": "visualization"
+    },
+    {
       "title": "Expanding the Capacity of Web Mapping",
       "type": "Advancing geospatial data visualization technology with <a href='http://www.esri.com/' target='_blank'>Esri, Inc.</a>",
       "description": "<p>\"Let geographic data tell stories via the Internet\" is this project's goal. As world-wide web becomes the primary media of maps and geographic information, <i>how should traditional maps and cartography evolve to meet the emerging needs and challenges of web mapping?</i></p><p>Now dot density, proportional symbol, color ramp mapping are all available in the <a href='http://developers.arcgis.com/en/javascript/' target='_blank'>ArcGIS API for JavaScript</a>. Rather than just migrating everything in conventional cartography from papers to browsers, we explored new concepts, new workflows and new visual effects, by which web developers can convey new messages with powerful mapping tools.</p>Demos:<ul><li><a href='vector.html' target='_blank'>One dataset, multiple ways to visualize</a></li><li><a href='http://developers.arcgis.com/en/javascript/samples/renderer_dot_density_multiple_classes/' target='_blank'>Scale-dependent dot density map</a></li><span class='note'>(A web-based dot-density map I developed. Try zoom in/out to see how the dot value changes with scale.)</span><li><a href='http://developers.arcgis.com/en/javascript/samples/renderer_color_ramp/' target='_blank'>Choropleth map without class breaks</a></li><span class='note'>(No class break anymore - we just map it from the minimum to the maximum!)</span></ul>",
