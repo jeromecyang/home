@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans|Raleway:200" rel="stylesheet">
+  <link href="//rawgit.com/jeromecyang/bos2/gh-pages/common/blog-n-viz.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+header {
+  height: 100%;
+  width: 100%;
+  background: url(https://lh3.googleusercontent.com/M4MlF9MnmAB5mRicvQ0gPWDBRP6MC_K7o-GQF9n70RZj4PgUsh0PFlLwmWJJdHnZHKTJQe29HHzcfp7QuPkzR9KTu9g3dHaA4oYFcGVlVkFJJTonpPMizvBI8RTrfp72fzW2v89ZHkCSC17xJQAMSYkRhyE2tNSdwxleCWkeFWQBoqTbDf7-2bQgq8KRSrEZJR74b1S1H48EMRHi8qIHi7aOb44kmKRRpQPgJIHhjNI4xH_mKdoXoDHakxniCDxVCgwYo_FDrALyRWmBe2LXxljNiXaJjR9BunqEK6fBrykOH7AV1u0cBJ-BjDcUoJSg7mvS0u-PWPOi0cuDCXX5SDTOYMDiJCdbEFHrLkgvBNeYp7KPqdEx8NSGJ3M08lfom8r-HsmW4NkkeaUloCNifsqRYpLf2Y8x_hIFUZHwnl4Cih6L7lyD8emdwGEH7sQd_rj7znD8_LdjWIrh1KpdhqA8yoLzFUwkz-FvU735ALoadZiTNT_QC8xKwjA4cURoSRv1a5B9ZXhY0giSLSWlTQVd_36e1fIqYXcsG8hMP9U2g_jq6Z4nAzg48hNUWaAo_ROIrZBqaDqPt95A_-tNDaTiijE4Hs0=w900-h600-no) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  display: table;
+}
+header>div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(0,0,0,0.7);
+}
+.col-sm-6 {
+  margin: 30px auto;
+}
+.col-sm-6>div {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 48px;
+}
+.icon-fa {
+  text-align: center;
+}
+.fa {
+  font-size: 36px;
+  width: 48px;
+  margin: 0 5px;
+}
+  </style>
+</head>
+<body ng-app="app" style="height: 100%; padding-top: 0">
+  <nav class="navbar navbar-inverse navbar-fixed-top" ng-include="'//jeromecyang.github.io/bos2/common/header.html'" style="background: none; border: none"></nav>
+  
+  <header>
+    <div>
+      <h1 style="font-size: 72px">Jerome Yang</h1>
+      <div>A Developer, Geographer and Traveler</div>
+    </div>
+  </header>
+  
+  <div class="container">  
+    <section>I'm currently rebuilding this site. Please check out the <a href="_index.html">old site</a> for information.</section>
+    
+    <section>
+      <h3>Hello! This is Jerome</h3>
+      <div>I'm passionate about:</div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div><span class="icon-fa"><i class="fa fa-laptop"></i></span>App Development</div>
+        </div>
+        <div class="col-sm-6">
+          <div><span class="icon-fa"><i class="fa fa-area-chart"></i></span>Data Visualization</div>
+        </div>
+        <div class="col-sm-6">
+          <div><span class="icon-fa"><i class="fa fa-map-marker"></i></span>Maps & Geospatial Technologies</div>
+        </div>
+        <div class="col-sm-6">
+          <div><span class="icon-fa"><i class="fa fa-plane"></i></span>Travel</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>angular.module('app', [])</script>
+</body>
+</html>
