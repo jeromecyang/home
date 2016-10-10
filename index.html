@@ -28,15 +28,10 @@
         });
       
         $.getJSON("data.json", function(data){
-          $("#about-content").html(data.about.description);
-          $("#about-photo").html($("<img>", {src: data.about.photo, alt: "Profile photo"}));
-          
           $.each(data.portfolio, function(index, item){
             $("<div>", { class: "title-2" }).html(item.title).appendTo("#portfolio-content");
             $("<div>", { class: "summary" }).html(item.type).appendTo("#portfolio-content");
             var instance = $("<div>", { class: "instance" }).appendTo("#portfolio-content");
-            
-            $("<div>", {class: "description"}).html(item.description).appendTo(instance);
 
             var demo = $("<div>", {class: "image"}).appendTo(instance);
             if (item.demo === "gallery") {
@@ -50,6 +45,8 @@
                 pic.append($("<img>", {src: item.src, alt: item}));
               });
             };
+
+            $("<div>", {class: "description"}).html(item.description).appendTo(instance);
           });
           
           $.each(data.resume, function(index, category){
@@ -76,7 +73,7 @@
       });
     </script>
   </head>
-  <body>
+  <body ng-app="app" ng-controller="ctrl">
     <div id="main">
       <div style="position: fixed; top: 0;">
         <div id="nav-bar"><a href="#top" class="page-link">Home</a> | <a href="#about" class="page-link">About</a> | <a href="#portfolio" class="page-link">Portfolio</a> | <a href="#resume" class="page-link">Resume/CV</a></div>
@@ -97,13 +94,23 @@
       </div>
       <a id="about"><div class="title-1">About</div></a>
       <div>
-        <div id="about-photo"></div>
-        <p id="about-content"></p>
+        <div style="text-align: center"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAb_AAAAJDkwNzA4MmVlLTZlODktNDExMS04ODk0LThmYjRlNDYxZDQxMQ.jpg" style="width: 250px; height: 250px; border-radius: 125px"></div>
+        <div style="font-size: 14px">Jerome is a:<ul><li><b>Web Developer</b>, with solid experience in jQuery, Dojo, Angular.js, Bootstrap, D3.js, etc</li><li><b>UI/UX Designer/Developer</b>, able to create succinct, comprehensible and informative interface</li><li><b>Technical Writer/Evangelist</b>, writing documentation, posting on blogs and presenting at conferences</li><li><b>Data Analyst</b>, having deep statistic knowledge and strong Python skill</li><li><b>Cartographer</b>, creating aesthetic geospatial visualization on the web and paper</li><li><b>Teamwork Leader and Communicator</b>, loving to work in an innovative and collaborative environment</li></ul></div>
       </div>
       <a id="portfolio"><div class="title-1">Portfolio</div></a>
       <div id="portfolio-content"></div>
       <a id="resume"><div class="title-1">Resume/CV</div></a>
       <div id="resume-content"></div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script>
+angular.module("app", []).controller("ctrl", function($scope, $http){
+  $http.get("resume.json").then(function(response){
+    $scope.resume = response.data;
+    console.log($scope.resume);
+  });
+});
+    </script>
   </body>
 </html>

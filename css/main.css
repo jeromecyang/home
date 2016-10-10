@@ -3,12 +3,11 @@ html {
 }
 #main {
   width: 100%;
-  max-width: 960px;
+  max-width: 720px;
   margin: 0 auto 0 auto;
 }
 #nav-bar {
   position: relative;
-  margin-left: 700px;
   font-size: 11px;
   background-color: #eee;
   color: #888;
@@ -43,17 +42,19 @@ html {
 .title-1 {
   font-size: 48px;
   font-family: 'Cinzel', sans-serif;
-  margin-top: 24px;
+  margin-top: 60px;
   text-align: center;
 }
 .title-2 {
   font-size: 28px;
   font-family: 'Cinzel', sans-serif;
   margin-top: 40px;
+  text-align: center;
 }
 .summary {
-  font-size: 14px;
   color: #888;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .summary a {
   color: #888;
@@ -67,16 +68,10 @@ html {
   margin: 0 0 10px 0;
 }
 .image {
-  width: 320px;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 20px;
+  text-align: center;
 }
 .description {
-  width: 620px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
+  font-size: 14px;
 }
 .description a {
   color: #000;
@@ -92,22 +87,6 @@ html {
 .note {
   font-size: 12px;
   color: #888;
-}
-#about-content {
-  display: inline-block;
-  width: 690px;
-  vertical-align: top;
-  margin-left: 20px;
-}
-#about-photo {
-  margin-top: 40px;
-  display: inline-block;
-  width: 240px;
-  vertical-align: top;
-}
-#about-photo img {
-  width: 240px;
-  height: 240px;
 }
 .resume-highlight {
   margin-top: 20px;
