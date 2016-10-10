@@ -1,3 +1,6 @@
+html {
+  font-family: 'Raleway', sans-serif;
+}
 #main {
   width: 960px;
   margin: 0 auto 0 auto;
@@ -5,7 +8,7 @@
 #nav-bar {
   position: relative;
   margin-left: 700px;
-  font: 11px Segoe UI;
+  font-size: 11px;
   background-color: #eee;
   color: #888;
   padding: 5px;
@@ -19,7 +22,6 @@
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  font-family: Segoe UI;
 }
 #front-content a, #nav-bar a {
   color: #000;
@@ -30,27 +32,26 @@
 }
 .header {
   font-size: 54px;
-  font-family: Georgia;
   margin: auto;
+  font-family: 'Cinzel', sans-serif;
+  letter-spacing: 8px
 }
 #contact {
   font-size: 11px;
-  font-family: Segoe UI;
 }
 .title-1 {
-  font-size: 60px;
-  font-family: Segoe UI Light;
+  font-size: 48px;
+  font-family: 'Cinzel', sans-serif;
   margin-top: 24px;
   text-align: center;
 }
 .title-2 {
   font-size: 28px;
-  font-family: Impact;
-  color: #666;
-  margin-top: 18px;
+  font-family: 'Cinzel', sans-serif;
+  margin-top: 40px;
 }
 .summary {
-  font: 14px Comic Sans MS;
+  font-size: 14px;
   color: #888;
 }
 .summary a {
@@ -62,7 +63,6 @@
   border-bottom: 1px solid #888;
 }
 .instance {
-  font-family: Segoe UI;
   margin: 0 0 10px 0;
 }
 .image {
@@ -93,8 +93,6 @@
   color: #888;
 }
 #about-content {
-  font-family: Segoe UI;
-  /*text-indent: 20px;*/
   display: inline-block;
   width: 690px;
   vertical-align: top;
@@ -112,7 +110,6 @@
 }
 .resume-highlight {
   margin-top: 20px;
-  font-family: Segoe UI Bold;
   font-weight: 900;
 }
 .resume-placetime {
@@ -124,7 +121,7 @@
   border-radius: 2px;
 }
 .ui-dialog-title {
-  font: 12px Segoe UI;
+  font-size: 12px;
   text-overflow: clip !important;
   white-space: normal !important;
   overflow: visible !important;
