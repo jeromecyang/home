@@ -1,10 +1,11 @@
 html {
   font-family: 'Raleway', sans-serif;
 }
+body {
+  margin: 0;
+}
 #main {
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto 0 auto;
+  margin: 0;
 }
 #nav-bar {
   position: relative;
@@ -17,6 +18,8 @@ html {
 #front-page {
   display: table;
   width: 100%;
+  background: url(../images/cover-map.png) fixed center center;
+  filter: grayscale(100%);
 }
 #front-content {
   text-align: center;
@@ -48,13 +51,16 @@ html {
 .title-2 {
   font-size: 28px;
   font-family: 'Cinzel', sans-serif;
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .summary {
   color: #888;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
 }
 .summary a {
   color: #888;
@@ -72,6 +78,7 @@ html {
 }
 .description {
   font-size: 14px;
+  line-height: 18px;
 }
 .description a {
   color: #000;

@@ -53,7 +53,7 @@
             if (category.display === "items") {
               $("<div>", { class: "title-2" }).html(category.title).appendTo("#resume-content");
               $.each(category.items, function(index, item){
-                var desc = $("<ul>");
+                var desc = $("<ul>", {class: "resume-summary"});
                 $.each(item.description, function(index, line){
                   desc.append($("<li>").html(line));
                 });
@@ -92,16 +92,38 @@
           <div style="font-size: 11px; color: #666"><a class="page-link" href="#about">About</a> | <a class="page-link" href="#portfolio">Portfolio</a> | <a class="page-link" href="#resume">Resume/CV</a></div>
         </div>
       </div>
-      <a id="about"><div class="title-1">About</div></a>
-      <div>
-        <div style="text-align: center"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAb_AAAAJDkwNzA4MmVlLTZlODktNDExMS04ODk0LThmYjRlNDYxZDQxMQ.jpg" style="width: 250px; height: 250px; border-radius: 125px"></div>
-        <div style="font-size: 14px">Jerome is a:<ul><li><b>Web Developer</b>, with solid experience in jQuery, Dojo, Angular.js, Bootstrap, D3.js, etc</li><li><b>UI/UX Designer/Developer</b>, able to create succinct, comprehensible and informative interface</li><li><b>Technical Writer/Evangelist</b>, writing documentation, posting on blogs and presenting at conferences</li><li><b>Data Analyst</b>, having deep statistic knowledge and strong Python skill</li><li><b>Cartographer</b>, creating aesthetic geospatial visualization on the web and paper</li><li><b>Teamwork Leader and Communicator</b>, loving to work in an innovative and collaborative environment</li></ul></div>
-      </div>
-      <a id="portfolio"><div class="title-1">Portfolio</div></a>
-      <div id="portfolio-content"></div>
-      <a id="resume"><div class="title-1">Resume/CV</div></a>
-      <div id="resume-content"></div>
 
+      <div style="max-width: 720px; margin: 0 auto; padding: 0 20px">
+        <a id="about"><div class="title-1">About</div></a>
+        <div>
+          <div style="text-align: center"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAb_AAAAJDkwNzA4MmVlLTZlODktNDExMS04ODk0LThmYjRlNDYxZDQxMQ.jpg" style="width: 250px; height: 250px; border-radius: 125px"></div>
+          <div style="font-size: 14px; line-height: 18px">
+            <p style="font-size: 24px; line-height: 24px">Hi there!</p>
+            <p style="font-size: 24px; line-height: 24px">I'm a front-end software developer with 4+ years of solid professional experience in web UI/UX, geospatial technologies and data visualization. I'm passionate about building graphic and visualization on user interface to present rich information to the public, in the realms of scientific research, education and media communication.</p>
+            <p>My areas of interest include:
+              <ul>
+                <li>Data analysis and visualization</li>
+                <li>Geospatial technologies and maps</li>
+                <li>Technical writing and communication</li>
+                <li>Agile methodologies and product management</li>
+              </ul>
+            </p>
+            <p>And I enjoy working on:
+              <ul>
+                <li>Web development with JavaScript (Angular.js, jQuery, Bootstrap, d3.js), HTML and CSS</li>
+                <li>REST API development with SQL and Java or Python</li>
+                <li>Mobile development for Android and iOS</li>
+                <li>Big data analysis with Hadoop, PySpark, etc</li>
+              </ul>
+            </p>
+            <p style="font-size: 24px; line-height: 24px">Please contact me if you'd like to talk about any of the above!</p>
+          </div>
+        </div>
+        <a id="portfolio"><div class="title-1">Portfolio</div></a>
+        <div id="portfolio-content"></div>
+        <a id="resume"><div class="title-1">Resume/CV</div></a>
+        <div id="resume-content"></div>
+      </div>
       <!--div class="title-2">Work</div>
       <div ng-repeat="item in resume.work" class="resume-item">
         <div><span class="resume-highlight">{{item.company}}</span> <span class="resume-placetime">{{item.startDate}} - {{item.endDate}}</span></div>
