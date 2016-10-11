@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JEROME YANG</title>
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/lightbox.css">
@@ -101,9 +101,16 @@
       <div id="portfolio-content"></div>
       <a id="resume"><div class="title-1">Resume/CV</div></a>
       <div id="resume-content"></div>
+
+      <!--div class="title-2">Work</div>
+      <div ng-repeat="item in resume.work" class="resume-item">
+        <div><span class="resume-highlight">{{item.company}}</span> <span class="resume-placetime">{{item.startDate}} - {{item.endDate}}</span></div>
+        <div><i>{{item.position}}</i></div>
+        <div class="resume-summary" ng-bind-html="item.summary"></div>
+      </div-->
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script>
 angular.module("app", []).controller("ctrl", function($scope, $http){
   $http.get("resume.json").then(function(response){
@@ -111,6 +118,6 @@ angular.module("app", []).controller("ctrl", function($scope, $http){
     console.log($scope.resume);
   });
 });
-    </script>
+    </script-->
   </body>
 </html>

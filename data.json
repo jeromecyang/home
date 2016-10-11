@@ -199,11 +199,6 @@
           "title": "Consequence of construction: air pollution"
         }
       ]
-    },
-    {
-      "title": "\"Bridge\" the Green Gap",
-      "type": "Landscape Design",
-      "description": "Coming soon"
     }
   ],
   "resume": [
@@ -238,10 +233,20 @@
       "display": "items",
       "items": [
         {
+          "title": "Pointillist",
+          "subtitle": "Senior User Interface Engineer",
+          "location": "Boston, MA",
+          "time": "2014-present",
+          "description": [
+            "I'm a primary developer of Pointillist, a web-based business intelligence tool that enables marketers to discover opportunities through their customers' behavior patterns. Along with my co-workers, I created a large-scale Angular- and d3-based graphic interface from scratch. This interface allows users to interact with their data as if they're playing games, and to see aesthetic visualizations immediately.",
+            "As one of the founding engineer of this product, I also extensively involve in product design, technical research and cross-team communication."
+          ]
+        },
+        {
           "title": "Esri Inc.",
           "subtitle": "Product Engineer (JavaScript)",
           "location": "Redlands, CA",
-          "time": "2012-present",
+          "time": "2012-2014",
           "description": [
             "Developed and prototyped web mapping applications with extensive web programming (HTML5, JavaScript, CSS3, AJAX, D3.js, Dojo, etc).",
             "Developed, tested and promoted ArcGIS API for JavaScript (v3.1 - v3.8): documentation, conference presentation, ect.",
@@ -410,11 +415,6 @@
           "description": []
         }
       ]
-    },
-    {
-      "title": "Research Papers",
-      "display": "items",
-      "items": []
     }
   ]
 }

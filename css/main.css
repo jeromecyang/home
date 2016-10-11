@@ -88,9 +88,12 @@ html {
   font-size: 12px;
   color: #888;
 }
+
+.resume-item {
+  margin: 20px auto;
+}
 .resume-highlight {
-  margin-top: 20px;
-  font-weight: 900;
+  font-weight: 700;
 }
 .resume-placetime {
   margin-left: 15px;
@@ -100,6 +103,12 @@ html {
   padding: 2px 4px;
   border-radius: 2px;
 }
+.resume-summary {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .ui-dialog-title {
   font-size: 12px;
   text-overflow: clip !important;
