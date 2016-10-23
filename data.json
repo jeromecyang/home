@@ -229,6 +229,14 @@
       ]
     },
     {
+      "title": "Patents",
+      "display": "items",
+      "items": [{
+        "subtitle": "Harrower, M., Bartley, J., Minami, M., Ponnusamy, P., Yang, J. C.-R. 2014. Systems and Methods for Smart Cartography. U.S. Patent Application 20160246468A1, filed on February 24, 2015 and issued on August 25, 2016.",
+        "description": []
+      }]
+    },
+    {
       "title": "Professional Experience",
       "display": "items",
       "items": [
@@ -320,14 +328,6 @@
       ]
     },
     {
-      "title": "Patents",
-      "display": "items",
-      "items": [{
-        "subtitle": "Harrower, M., Bartley, J., Minami, M., Ponnusamy, P., Yang, J. C.-R. 2014. Systems and Methods for Smart Cartography. U.S. Patent Application 20160246468A1, filed on February 24, 2015 and issued on August 25, 2016.",
-        "description": []
-      }]
-    },
-    {
       "title": "Awards and Honors",
       "display": "items",
       "items": [
@@ -380,6 +380,27 @@
       "title": "Talks and Presentations",
       "display": "items",
       "items": [
+        {
+          "subtitle": "ArcGIS API for JavaScript, Mapping and Visualization",
+          "title": "Esri User Conference",
+          "location": "San Diego, CA",
+          "time": "July 2014",
+          "description": []
+        },
+        {
+          "subtitle": "What's New for ArcGIS API for JavaScript",
+          "title": "Esri User Conference",
+          "location": "San Diego, CA",
+          "time": "July 2014",
+          "description": []
+        },
+        {
+          "subtitle": "ArcGIS API for JavaScript: What Have You Done for Me Lately?",
+          "title": "Esri International Developer Summit",
+          "location": "Palm Springs, CA",
+          "time": "March 2014",
+          "description": []
+        },
         {
           "subtitle": "Five Ways I Make Maps",
           "title": "Clark Cartography and Geovisualization Talks",
