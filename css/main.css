@@ -76,6 +76,9 @@ body {
 .image {
   text-align: center;
 }
+.image img {
+  max-width: 100%;
+}
 .description {
   font-size: 14px;
   line-height: 18px;
