@@ -18,7 +18,7 @@ body {
 #front-page {
   display: table;
   width: 100%;
-  background: url(../images/cover-map-1.png) fixed center center;
+  background: url(../images/cover-map-2.png) fixed center center;
   filter: grayscale(100%);
 }
 #front-content {
@@ -75,6 +75,9 @@ body {
 }
 .image {
   text-align: center;
+}
+.image img {
+  max-width: 100%;
 }
 .description {
   font-size: 14px;
