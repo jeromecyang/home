@@ -3,7 +3,7 @@
   <head>
     <title>Jerome Yang</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Raleway:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyC1a5Qt70mQ9GzIX6uSgvLHHHeo6l4uLoo"></script>
@@ -76,18 +76,19 @@ body {
 .welcome>span {
   color: darkorange;
 }
+.main {
+  font-family: 'Raleway', sans-serif;
+}
 .main>.section-title {
   text-align: center;
-  color: darkorange;
   font-size: 72px;
-  font-family: 'Anton', sans-serif;
   margin: 20px auto;
 }
     </style>
   </head>
   <body ng-app="app" ng-controller="ctrl">
     <div class="cover">
-      <ng-map class="map" center="42.35,-71.15" zoom="13" disable-default-u-i="true" scrollwheel="false" styles="{{mapStyles}}">
+      <ng-map class="map" center="42.35,-71.15" zoom="13" disable-default-u-i="true" scrollwheel="false" styles="{{mapStyles}}"></ng-map>
     </div>
     <div class="content">
       <div class="start">
@@ -97,7 +98,7 @@ body {
         <div class="start-right">
           <div class="vertical-center">
             <div class="menu">
-              <div>about</div>
+              <div><a href="#about">about</a></div>
               <div><a href="portfolio.html">portfolio</a></div>
               <div><a href="files/CurriculumVitae.pdf" target="_blank">curriculum vitae</a></div>
             </div>
@@ -107,20 +108,31 @@ body {
               <a href="https://twitter.com/jeromyang" target="_blank"><i class="fa fa-twitter-square"></i></a>
               <a href="mailto:jeromecyang@gmail.com" target="_blank"><i class="fa fa-envelope-square"></i></a>
             </div>
-            <div class="welcome">I'm a <span>full-stack</span> software developer focusing on <span>UI/UX</span>, <span>information visualization</span>, human-computer interaction (<span>HCI</span>) and geographic information system (<span>GIS</span>). I'm passionate about building <span>succinct</span>, <span>aesthetic</span> and <span>informative</span> interfaces that communicate with people via <span>graphics</span> and <span>maps</span>.</div>
+            <div class="welcome">I'm a <span>full-stack</span> software developer focusing on <span>UI/UX</span>, <span>information visualization</span>, human-computer interaction (<span>HCI</span>) and geographic information system (<span>GIS</span>). I'm passionate about designing and creating <span>succinct</span>, <span>aesthetic</span> and <span>informative</span> interfaces that communicate via <span>graphics</span> and <span>maps</span>.</div>
           </div>
         </div>
       </div>
-      <div class="main" ng-show="false">
-        <div class="section-title">about</div>
+      <div class="main">
+        <div class="section-title"><a id="about"></a>about</div>
         <div>
-          <ng-map center="42.35,-71.15" zoom="13" disable-default-u-i="true" scrollwheel="false" style="height: 200px">
+          cities I have lived
+          <ng-map center="30,-160" zoom="2" disable-default-u-i="true" scrollwheel="false" styles='[{"featureType": "all", "elementType": "all", "stylers": [{"visibility": "off"}]}, {"featureType": "water", "elementType": "geometry", "stylers": [{"visibility": "on"}, {"color": "#ffffff"}]}]' style="height: 200px">
+            <marker position="25,121.5" title="Hello World!" icon="{path:'M-1,0a1,1 0 1,0 2,0a1,1 0 1,0 -2,0z',scale:5,strokeWeight:0,fillColor:'darkorange',fillOpacity:1}"></marker>
+            <custom-marker position="25,121.5">Taipei (Birth-1993; 1996-2010)</custom-marker>
+            <marker position="22.5,121.5" title="Hello World!" icon="{path:'M-1,0a1,1 0 1,0 2,0a1,1 0 1,0 -2,0z',scale:5,strokeWeight:0,fillColor:'darkorange',fillOpacity:1}"></marker>
+            <custom-marker position="12,121.5">Hengchun (1993-1996)</custom-marker>
+            <marker position="42,-71.2" title="Hello World!" icon="{path:'M-1,0a1,1 0 1,0 2,0a1,1 0 1,0 -2,0z',scale:5,strokeWeight:0,fillColor:'darkorange',fillOpacity:1}"></marker>
+            <custom-marker position="42,-71.2">Boston (2010-2012; 2014-present)</custom-marker>
+            <marker position="34,-118.2" title="Hello World!" icon="{path:'M-1,0a1,1 0 1,0 2,0a1,1 0 1,0 -2,0z',scale:5,strokeWeight:0,fillColor:'darkorange',fillOpacity:1}"></marker>
+            <custom-marker position="34,-118.2">Los Angeles (2012-2014)</custom-marker>
+          </ng-map>
+          <p>I have an intrinsic interest in graphics and maps. Educated as a geographer and cartographer, I started my professional career in online maps, and later became a full-stack software developer. Now I spend most of my time creating visualizations and user interfaces, while enjoying outdoor activities, travel, photography and music (of a very wide range) on the side.</p>
         </div>
-        <div class="section-title">portfolio</div>
+        <!--div class="section-title">portfolio</div-->
       </div>
     </div>
     <script>
-angular.module("app", ["ngMap"]).controller("ctrl", function($scope, $http){
+angular.module("app", ["ngMap"]).controller("ctrl", function($scope){
   $scope.mapStyles = [{"elementType":"labels","stylers":[{"visibility":"off"}]},{"elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#333333"}]},{"featureType":"landscape","stylers":[{"color":"#444444"},{"visibility":"on"}]}];
 });
     </script>
