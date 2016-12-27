@@ -5,86 +5,10 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css?family=Anton|Raleway:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main2.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyC1a5Qt70mQ9GzIX6uSgvLHHHeo6l4uLoo"></script>
     <script src="//cdn.rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.min.js"></script>
-    <style>
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-.cover {
-  width: 100vw;
-  height: 100vh;
-  background: #444;
-}
-.map {
-  height: 100vh;
-}
-.content {
-  position: absolute;
-  top: 0;
-  max-width: 960px;
-  width: 100%;
-}
-.vertical-center {
-  position: relative;
-  top: 50vh;
-  transform: translateY(-50%);
-}
-.start {
-  height: 100vh;
-  color: #fff;
-  font-family: 'Anton', sans-serif;
-  display: flex;
-}
-.start a {
-  color: #fff;
-  text-decoration: none;
-}
-.start-left {
-  width: 30vw;
-  height: 100vh;
-  font-size: 84px;
-  word-break: break-all;
-  line-height: .9em;
-  text-align: right;
-  padding: 0 30px;
-}
-.start-right {
-  width: 70vw;
-  height: 100vh;
-  padding-right: 30px;
-}
-.menu {
-  font-size: 38px;
-  line-height: 1em;
-  white-space: nowrap;
-}
-.menu a:hover {
-  text-decoration: underline;
-}
-.links {
-  font-size: 24px;
-  letter-spacing: 3px;
-  margin: 20px 0;
-}
-.welcome {
-  font-size: 22px;
-}
-.welcome>span {
-  color: darkorange;
-}
-.main {
-  font-family: 'Raleway', sans-serif;
-}
-.main>.section-title {
-  text-align: center;
-  font-size: 72px;
-  margin: 20px auto;
-}
-    </style>
   </head>
   <body ng-app="app" ng-controller="ctrl">
     <div class="cover">
@@ -115,7 +39,6 @@ body {
       <div class="main">
         <div class="section-title"><a id="about"></a>about</div>
         <div>
-          cities I have lived
           <ng-map center="30,-160" zoom="2" disable-default-u-i="true" scrollwheel="false" styles='[{"featureType": "all", "elementType": "all", "stylers": [{"visibility": "off"}]}, {"featureType": "water", "elementType": "geometry", "stylers": [{"visibility": "on"}, {"color": "#ffffff"}]}]' style="height: 200px">
             <marker position="25,121.5" title="Hello World!" icon="{path:'M-1,0a1,1 0 1,0 2,0a1,1 0 1,0 -2,0z',scale:5,strokeWeight:0,fillColor:'darkorange',fillOpacity:1}"></marker>
             <custom-marker position="25,121.5">Taipei (Birth-1993; 1996-2010)</custom-marker>
@@ -128,7 +51,16 @@ body {
           </ng-map>
           <p>I have an intrinsic interest in graphics and maps. Educated as a geographer and cartographer, I started my professional career in online maps, and later became a full-stack software developer. Now I spend most of my time creating visualizations and user interfaces, while enjoying outdoor activities, travel, photography and music (of a very wide range) on the side.</p>
         </div>
-        <!--div class="section-title">portfolio</div-->
+        <!--div class="section-title">portfolio</div>
+        <div class="portfolio">
+          <div style="background-image: url(//www.pointillist.com/images/data/helper-pc.png)"></div>
+          <div style="background-image: url(//blogs.esri.com/esri/arcgis/files/2020/02/SD_heatmap.jpg)"></div>
+          <div style="background-image: url(//blogs.esri.com/esri/arcgis/files/2014/10/visualization-5-1.png)"></div>
+          <div style="background-image: url(images/air3.png)"></div>
+          <div style="background-image: url(images/africa.png)"></div>
+          <div style="background-image: url(images/eelgrass3.png)"></div>
+          <div style="background-image: url(//jeromecyang.github.io/home/images/crowdsource1.png)"></div>
+        </div-->
       </div>
     </div>
     <script>

@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.cover {
+  width: 100vw;
+  height: 100vh;
+  background: #444;
+}
+.map {
+  height: 100vh;
+}
+.content {
+  position: absolute;
+  top: 0;
+  max-width: 960px;
+  width: 100%;
+}
+.vertical-center {
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+.start {
+  height: 100vh;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  display: flex;
+}
+.start a {
+  color: #fff;
+  text-decoration: none;
+}
+.start-left {
+  width: 30vw;
+  height: 100vh;
+  font-size: 84px;
+  word-break: break-all;
+  line-height: .9em;
+  text-align: right;
+  padding: 0 30px;
+}
+.start-right {
+  width: 70vw;
+  height: 100vh;
+  padding-right: 30px;
+}
+.menu {
+  font-size: 38px;
+  line-height: 1em;
+  white-space: nowrap;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+.links {
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 20px 0;
+}
+.welcome {
+  font-size: 22px;
+}
+.welcome>span {
+  color: darkorange;
+}
+.main {
+  font-family: 'Raleway', sans-serif;
+}
+.main>.section-title {
+  text-align: center;
+  font-size: 72px;
+  margin: 20px auto;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio>div {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
