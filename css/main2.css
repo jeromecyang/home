@@ -28,10 +28,7 @@ body {
   font-family: 'Anton', sans-serif;
   display: flex;
 }
-.start a {
-  color: #fff;
-  text-decoration: none;
-}
+
 .start-left {
   width: 30vw;
   height: 100vh;
@@ -51,7 +48,11 @@ body {
   line-height: 1em;
   white-space: nowrap;
 }
-.menu a:hover {
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
   text-decoration: underline;
 }
 .links {
@@ -85,4 +86,5 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: pointer;
 }
