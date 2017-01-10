@@ -1,18 +1,6 @@
 {
   "portfolio": [
     {
-      "title": "Current Project: Pointillist",
-      "type": "A behavior-based business analytics and visualization platform",
-      "description": "",
-      "demo": "images",
-      "images": [
-        {
-          "src": "//www.pointillist.com/images/data/helper-pc.png",
-          "url": "//www.pointillist.com/"
-        }
-      ]
-    },
-    {
       "title": "Smart Mapping",
       "type": "An intelligence that recommends how you can visualize your geospatial data",
       "description": "<p>\"We want to go one step further for you\" is the motivation of this project. Instead of letting you set visualization method, color, symbol, etc step by step, ArcGIS.com is now going one step further for you. We analyze your data and recommend good ways to visualize them for you. By no means this means you lose your control over your visualization, but our smart default will make your visualization production process quicker and more enjoyable.</p><p>I was the primary prototype developer on this project, involving extensively in research and product version development. This technology has been published as a US patent.</p><p><ul><li><a href='//www.esri.com/software/arcgis/smart-mapping' target='_blank'>Smart Mapping Home</a> <span class='note'>(overview & video)</span></li><li><a href='//blogs.esri.com/esri/arcgis/2015/03/02/introducing-smart-mapping/' target='_blank'>Introducing Smart Mapping</a> <span class='note'>(blog post)</span></li><li><a href='https://patents.google.com/patent/US20160246468A1/en' target='_blank'>Systems and methods for smart cartography</a> <span class='note'>(US Patent US20160246468A1)</span></li></ul></p>",
@@ -37,6 +25,30 @@
         {
           "src": "images/viz-bay-area.png",
           "url": "//developers.arcgis.com/javascript/3/samples/renderer_dot_density_multiple_classes/"
+        }
+      ]
+    },
+    {
+      "title": "Angular-based Visualization: Urban Population of the World 2015",
+      "type": "An attempt to manipulate SVG with Angular.js, and to show both quantity and percentage simultaneously",
+      "description": "<p>I tried to achieve two goals in this visualization.</p><p>Graphically, a quantity and a percentage are displayed with one single graphic for each country. The bar length shows population, whereas 10 different colors are used to show various percentages. The countries are ordered from the most urbanized to the least, so the order in the sequence can help the audience grasp how urbanized a country is compared to others.</p><p>Technologically, this visualization was created with only Angular.js. No d3.js is used. The advantage of this approach is a more contemporary, declarative, succinct way to manipulate SVG elements (compared to d3.js or jQuery). Also Angular's native directives, such as <code>ng-mouseenter</code>, <code>ng-if</code>, provide easy access to trigger events or toggle elements.</p>",
+      "demo": "images",
+      "images": [
+        {
+          "src": "images/urban-pop-2015.png",
+          "url": "../bos2/urban-pop-2015/"
+        }
+      ]
+    },
+    {
+      "title": "Current Project: Pointillist",
+      "type": "A behavior-based business analytics and visualization platform",
+      "description": "",
+      "demo": "images",
+      "images": [
+        {
+          "src": "//www.pointillist.com/images/data/helper-pc.png",
+          "url": "//www.pointillist.com/"
         }
       ]
     },
