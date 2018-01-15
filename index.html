@@ -3,7 +3,7 @@
   <head>
     <title>Jerome Yang</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <link href="https://fonts.googleapis.com/css?family=Anton|Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Raleway:300,400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/main2.css" rel="stylesheet">
   </head>
@@ -14,7 +14,7 @@
         <div class="start-right">
           <div class="menu">
             <a href="#about">about</a> / 
-            <a href="portfolio.html" target="_blank">portfolio</a> / 
+            <a href="#portfolio">portfolio</a> / 
             <a href="files/CurriculumVitae.pdf" target="_blank">resume</a> / 
             <a href="http://blog.jeromeyang.com/" target="_blank">blog</a>
           </div>
@@ -36,7 +36,7 @@
             <img src="images/jerome.jpg">
           </div>
           <div class="about-right">
-            <p>Thank you for visiting my website! My name is Jerome Yang. I'm a software developer based in Boston, MA, and also a frequent traveler, a culture/social observer and a blogger (blog.jeromeyang.com). As a Taiwanese immigrant to the US, I cherish my identity as a foreigner in tech industry and enjoy the cross-cultural interaction around me everyday.</p>
+            <p>Thank you for visiting my website! My name is Jerome Yang. I'm a software developer based in Boston, MA, and also a frequent traveler, a culture/social observer and a blogger (<a href="//blog.jeromeyang.com" target="_blank">blog.jeromeyang.com</a>). As a Taiwanese immigrant to the US, I cherish my identity as a foreigner in tech industry and enjoy the cross-cultural interaction around me everyday.</p>
             <p>Educated as a geographer and sociologist in college, working as a software developer had never been my goal until grad school, where I saw how information technology can be employed to solve numerous environmental and social issues. This is why after receiving a degree in geographic information science (GIS), I began my career as an engineer at the world's leading geographic information software company Esri, completed coursework in algorithms and big data analytics, and currently work at a customer journey analytics startup Pointillist.</p>
             <p>I'm excited about travel, cross-cultural experience and linguistics. Having visited 18 countries, I've been increasingly interested in building products that connect people and help people communicate across cultures Computer linguistics, machine translation and human language understanding are areas I'd like to dive into. Meanwhile, creating user interfaces with succinct information and rich graphics continues to be my primary area of expertise.</p>
             <p>Languages that I speak:</p>
@@ -48,20 +48,101 @@
             <p>You can reach me at hi[at]jeromeyang.com. Any work-/non-work-related contact is welcome!</p>
           </div>
         </div>
-        <!--a id="portfolio"></a>
+        <a id="portfolio"></a>
         <div class="section-title">portfolio</div>
-        <div style="text-align: center"><a href="portfolio.html" style="color: #000">&gt;&gt; See All Works</a></div>
-        <a href="portfolio.html">
         <div class="portfolio">
-          <div style="background-image: url(//www.pointillist.com/images/data/helper-pc.png)"></div>
-          <div style="background-image: url(//blogs.esri.com/esri/arcgis/files/2020/02/SD_heatmap.jpg)"></div>
-          <div style="background-image: url(//blogs.esri.com/esri/arcgis/files/2014/10/visualization-5-1.png)"></div>
-          <div style="background-image: url(images/urban-pop-2015.png)"></div>
-          <div style="background-image: url(images/air3.png)"></div>
-          <div style="background-image: url(images/africa.png)"></div>
-          <div style="background-image: url(images/eelgrass3.png)"></div>
-          <div style="background-image: url(//jeromecyang.github.io/home/images/crowdsource1.png)"></div>
-        </div-->
+          <div class="title">Smart Mapping</div>
+          <div class="subtitle">An intelligent system that recommends how you can visualize your geospatial data</div>
+          <div class="images">
+            <img src="https://blogs.esri.com/esri/arcgis/files/2020/02/SD_heatmap.jpg">
+          </div>
+          <div class="description">
+            <p>"We want to go one step further for you" is the motivation of this project. Instead of letting you set visualization method, color, symbol, etc step by step, ArcGIS.com is now going one step further for you. We analyze your data and recommend good ways to visualize them for you. By no means this means you lose your control over your visualization, but our smart default will make your visualization production process quicker and more enjoyable.</p><p>I was the primary prototype developer on this project, involving extensively in research and product version development. This technology has been published as a US patent.</p><p><ul><li><a href='//www.esri.com/software/arcgis/smart-mapping' target='_blank'>Smart Mapping Home</a> <span class='note'>(overview & video)</span></li><li><a href='//blogs.esri.com/esri/arcgis/2015/03/02/introducing-smart-mapping/' target='_blank'>Introducing Smart Mapping</a> <span class='note'>(blog post)</span></li><li><a href='https://patents.google.com/patent/US20160246468A1/en' target='_blank'>Systems and methods for smart cartography</a> <span class='note'>(US Patent US20160246468A1)</span></li></ul></p>
+          </div>
+
+          <div class="title">Knowing your Customers with Pointillist</div>
+          <div class="subtitle">An revolutionary customer journey analytics platform</div>
+          <div class="images"><img src="https://www.pointillist.com/wp-content/uploads/2017/05/Discover-Full-Size.png"></div>
+          <div class="description"><p>Nowaways, millions of web user events (such as clicking a button, checking out a URL, etc) happen and are recorded every day. Pointillist pulls all these events together to show the big picture behind the scene.</p><p>This platform was built as a big data analytics solution for non-technical users, and therefore there is significant amount of work on its front-end, as well as the web services to support the it. As a founding and primary developer, I have been in charge of the UI/UX, visualization, and REST services since the beginning of the product.</p><p>Learn more about Pointillist at <a href="https://www.pointillist.com/" target="_blank">pointillist.com</a>.</p></div>
+
+          <div class="title">Evolving Geo-Visualization at Esri, 2013-2014</div>
+          <div class="subtitle">Data Visualization with ArcGIS API for JavaScript</div>
+          <div class="images">
+            <img src="https://blogs.esri.com/esri/arcgis/files/2014/10/visualization-5-1.png">
+            <img src="images/viz-bay-area.png">
+          </div>
+          <div class="description"><p>"Let geographic data tell stories via the Internet" is this project's goal. As world-wide web becomes the primary media of maps and geographic information, <i>how should traditional maps and cartography evolve to meet the emerging needs and challenges of web mapping?</i></p><p>Throughout the years of 2013 and 2014, we significantly expanded our web mapping platform with more intuitive, comprehensive and east-to-use API for developers. Now a pretty dot density map or a choropleth with opacity variation can take only a few lines of code. While many customers have taken these new tools to create their own cool pieces, we also built a bunch of pretty demos to prototype, to inspire and to explore the future of geospatial data visualization.</p><ul><b>My blog posts</b><li><a href='http://blogs.esri.com/esri/arcgis/2014/09/05/data-visualization-with-arcgis-api-for-javascript/' target='_blank'>Data visualization with ArcGIS API for JavaScript</a></li><li><a href='http://blogs.esri.com/esri/arcgis/2014/09/11/data-visualization-with-arcgis-api-for-javascript-show-data-by-unique-value/' target='_blank'>Show Data by Unique Value</a></li><li><a href='https://blogs.esri.com/esri/arcgis/2014/09/24/data-visualization-with-arcgis-api-for-javascript-enhancement-options/' target='_blank'>Enhancement Options</a></li><li><a href='https://blogs.esri.com/esri/arcgis/2014/10/10/data-visualization-with-arcgis-api-for-javascript-show-data-by-color/' target='_blank'>Show Data by Color</a></li><li><a href='https://blogs.esri.com/esri/arcgis/2014/12/01/data-visualization-with-arcgis-api-for-javascript-show-data-by-size/' target='_blank'>Show Data by Size</a></li></ul><ul><b>My conference videos</b><li><a href='http://video.esri.com/watch/3840/whats-new-for-arcgis-api-for-javascript' target='_blank'>What's New for ArcGIS API for JavaScript (2014)</a></li><li><a href='http://video.esri.com/watch/3843/arcgis-api-for-javascript_comma_-mapping-and-visualization' target='_blank'>ArcGIS API for JavaScript, Mapping and Visualization</a></li></ul><ul><b>Demos</b><li><a href='vector.html' target='_blank'>One dataset, multiple ways to visualize</a></li><li><a href='http://developers.arcgis.com/en/javascript/samples/renderer_dot_density_multiple_classes/' target='_blank'>Scale-dependent dot density map</a></li><span class='note'>(A web-based dot-density map I developed. Try zoom in/out to see how the dot value changes with scale.)</span><li><a href='http://developers.arcgis.com/en/javascript/samples/renderer_color_ramp/' target='_blank'>Choropleth map without class breaks</a></li><span class='note'>(No class break anymore - we just map it from the minimum to the maximum!)</span></ul></div>
+
+          <div class="title">Angular-based Visualization: Urban Population of the World 2015</div>
+          <div class="subtitle">An attempt to manipulate SVG with Angular.js, and to show both quantity and percentage simultaneously</div>
+          <div class="images"><img src="images/urban-pop-2015.png"></div>
+          <div class="description"><p>I tried to achieve two goals in this visualization.</p><p>Graphically, a quantity and a percentage are displayed with one single graphic for each country. The bar length shows population, whereas 10 different colors are used to show various percentages. The countries are ordered from the most urbanized to the least, so the order in the sequence can help the audience grasp how urbanized a country is compared to others.</p><p>Technologically, this visualization was created with only Angular.js. No d3.js is used. The advantage of this approach is a more contemporary, declarative, succinct way to manipulate SVG elements (compared to d3.js or jQuery). Also Angular's native directives, such as <code>ng-mouseenter</code>, <code>ng-if</code>, provide easy access to trigger events or toggle elements.</p><p>You can check out the application <a href="https://jeromecyang.github.io/bos2/urban-pop-2015/" target="_blank">here</a>.</p></div>
+
+          <div class="title">AfricaMap</div>
+          <div class="subtitle">Web-based geospatial data visualization in collaboration with the <a href='http://worldmap.harvard.edu/africamap' target='_blank'>Center for Geographic Analysis, Harvard University</a></div>
+          <div class="images"><img src="images/africa.png"></div>
+          <div class="description"><p><a href='http://worldmap.harvard.edu/africamap' target='_blank'>AfricaMap</a> is an open-source web mapping platform designated for archiving, visualizing and integrating geospatial statistics particularly for Africa. One can easily find statistics from various organizations and governments, but <i>how do we fit them together in one single platform?</i></p><p>As a GIS analyst at <a href='http://gis.harvard.edu/icb/icb.do' target='_blank'>Center for Geographic Analysis (CGA), Harvard University</a>, I worked with African-Art-and-Architecture historian <a href='http://aaas.fas.harvard.edu/directory/faculty/suzanne-p-blier' target='_blank'>Dr. Suzanne P. Blier</a> to retrieve statistics from various sources, and explored the options to make these number \"visible\" on map. To handle data in various formats and qualities, I employed my fimilarity with data syntax and skills in programming for text processing to handle the data effectively and accurately. This is an ongoing project and all results are available at http://worldmap.harvard.edu/africamap.</p><ul><li><a href='http://worldmap.harvard.edu/africamap' target='_blank'>AfricaMap</a></li><li><a href='http://www.neh.gov/divisions/odh/grant-news/announcing-6-digital-humanities-implementation-grant-awards-july-2013' target='_blank'>Announcing 6 Digital Humanities Implementation Grant Awards (July 2013)</a></li></ul></div>
+
+          <div class="title">Map as a Communication Tool</div>
+          <div class="subtitle">Various thematic maps as storytelling media</div>
+          <div class="images">
+            <img class="sm" src="images/map1.jpg">
+            <img class="sm" src="images/map2.jpg">
+            <img class="sm" src="images/map3.jpg">
+            <img class="sm" src="images/map4.jpg">
+            <img class="sm" src="images/map5.jpg">
+            <img class="sm" src="images/map6.jpg">
+          </div>
+          <div class="description"><p>A map with good graphic design can convey messages in an informative and vivid way. As both a cartographer and a graphic designer, making maps with proper design is what I am striving for. This section contains maps I made for various projects.</p><ul><li><a href="images/map1.jpg" target="_blank">How many rooms are in your house?</a></li><li><a href="images/map2.jpg" target="_blank">The ratio of owner-occupied houses</a></li><li><a href="images/map3.jpg" target="_blank">Creating conservation areas for red-legged frogs</a></li><li><a href="images/map4.jpg" target="_blank">Fishing ports and annual production</a></li><li><a href="images/map5.jpg" target="_blank">Shrinking air routes<a></li><li><a href="images/map6.jpg" target="_blank">Special college admission program</a></li></ul></div>
+
+          <div class="title">Visualization from Scratch: Air Pollutants Mapping</div>
+          <div class="subtitle">Beginning with collecting first-hand air quality data in the field</div>
+          <div class="images">
+            <img class="sm" src="images/air1.png">
+            <img class="sm" src="images/air2.png">
+            <img class="sm" src="images/air3.png">
+            <img class="sm" src="images/air4.png">
+            <img class="sm" src="images/air5.png">
+            <img class="sm" src="images/air6.png">
+          </div>
+          <div class="description"><p>Air pollution mapping requires interpolation from point data. Instead of obtaining observations from existing monitoring stations, in this project we mapped air pollution from scratch - that is, we designed a monitoring network where the distribution of stations is optimized, went into the field to collect first-hand data, and explored the best way to visualize the data. Works included spatial optimization algorithm, experiment design, field particulate matter measurement, and visualization.</p><p>This project, which was proposed and coordinated by me, ultimately involved a interdisciplinary and collaborative effort of two professors and four graduate students with background in GIS, environmental science, physics, etc. It was awarded by Geller's Research Grant at <a href='http://www.clarku.edu/index.cfm' target='_blank'>Clark University</a>.</p><ul><li><a href='files/AirQuality_Poster4Research.pdf' target='_blank'>Conference poster</a></li><li><a href='files/Mapping the Concentration of Ambient Air Pollutants for Central Massachusetts.pdf' target='_blank'>Full project report</a></li></ul></div>
+
+          <div class="title">GIS off the Shore: Eelgrass Mapping</div>
+          <div class="subtitle">Getting GIS on board with the <a href='http://www.maine.gov/dmr/index.htm' target='_blank'>Maine Department of Marine Resources</a></div>
+          <div class="images">
+            <img class="sm" src="images/eelgrass1.png">
+            <img class="sm" src="images/eelgrass2.png">
+            <img class="sm" src="images/eelgrass3.png">
+            <img class="sm" src="images/eelgrass4.png">
+            <img class="sm" src="images/eelgrass5.png">
+            <img class="sm" src="images/eelgrass6.png">
+          </div>
+          <div class="description"><p>Eelgrass (<i>Zostera</i>) is an vital species in coastal ecosystems. It provides nutritions for many shallow ocean animals, and consequently sustains the fishery economy in the state of Maine. The goal of <a href='http://www.maine.gov/dmr/rm/eelgrass/index.htm' target='_blank'>eelgrass mapping</a> is to investigate, monitor and visualize eelgrass distribution.</p><p>Before entering the field, potential eelgrass patches were identified on low-tide aerial imagery and digitized in ArcGIS. While in the field, we drove a boat, navigated by ArcPad to visit every location we identified, and recorded the actual condition with notes, GPS tracklogs, photos and videos. After the field work, the data collected were summarized and released as public-accessible information in a web mapping application.</p></div>
+
+          <div class="title">Web GIS Crowd-sourcing</div>
+          <div class="subtitle">Developing interactive, collaborative web mapping applications</div>
+          <div class="images">
+            <img src="images/crowdsource1.png">
+            <img src="images/crowdsource2.png">
+          </div>
+          <div class="description"><p>Internet provides an effective way for multiple people to contribute geospatial data to one database. I participated in two crowd-sourcing GIS projects.</p><p><b>Maine Elver Map</b> was designed for marine patrol officers to report locations where illegal harvesting of elvers (young eels) were found. It successfully gathered 85 locations reported by about 10 officers. It employed Google Maps API and Google Fusion Table to provide a user interface and a publicly accessible database. Any input data was immediately reviewed by administrators via email to ensure the quality of the data.</p><p><a href='http://www.qiantangriver.org/' target='_blank'>QianTang River Map</a> was built to gather succeptible water pollution activities along the river. This project was initiated by <a href='http://www.greenzj.com/' target='_blank'>Green Zhejiang</a>, an environmental protection NGO in China. I worked as the primary technical lead to implement the system. Built upon <a href='http://www.ushahidi.com/' target='_blank'>Ushahidi's CrowdMap</a> platform, it leverages open-source tools to provide a zero-cost and easy-to-use solution to the NGO's need for crowd-sourcing.</p></div>
+
+          <div class="title">When Something is Built</div>
+          <div class="subtitle">3D terrian visualization of prospective constructions</div>
+          <div class="images">
+            <img class="sm" src="images/construction1.jpg">
+            <img class="sm" src="images/construction2.jpg">
+            <img class="sm" src="images/construction3.jpg">
+            <img class="sm" src="images/construction4.jpg">
+            <img class="sm" src="images/construction5.jpg">
+            <img class="sm" src="images/construction6.jpg">
+            <img class="sm" src="images/construction7.jpg">
+            <img class="sm" src="images/construction8.jpg">
+            <img class="sm" src="images/construction9.jpg">
+            <img class="sm" src="images/construction10.jpg">
+          </div>
+          <div class="description"><p>In the beginning of the 21st century, Taiwan government proposed several "mega projects", including a highway crossing a 10,000-ft mountain ridge, a 4000-acre artificial reservoir for industrial water supply, etc.</p><p>To simulate these projects' impact on the landscapes, I independently created 12 3-D visualization scenes to give the public a chance to "preview" the changed landscapes when the construction is complete. These scenes were made by scanning and georeferencing maps from the project plans, retrieving Google's sattelite imagery, overlaying data with digital terrain model (DTM) in ArcScene, and post-export editing with Corel PhotoImpact.</p></div>
+        </div>
       </div>
     </div>
   </body>
