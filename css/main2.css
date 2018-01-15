@@ -9,31 +9,26 @@ body {
   max-width: 960px;
   width: 100%;
 }
-.vertical-center {
-  position: relative;
-  top: 50vh;
-  transform: translateY(-50%);
-}
 .start {
   height: 100vh;
   color: #444;
   font-family: 'Anton', sans-serif;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
+.start>div {
+  padding: 0 10px;
+}
 .start-left {
-  width: 30vw;
-  height: 100vh;
   font-size: 84px;
-  word-break: break-all;
+  width: 250px;
   line-height: .9em;
   text-align: right;
-  padding: 0 30px;
 }
 .start-right {
-  width: 70vw;
-  height: 100vh;
-  padding-right: 30px;
+  max-width: 670px;
 }
 .menu {
   font-size: 24px;
@@ -59,10 +54,11 @@ a:hover {
 .welcome>span {
   color: darkorange;
 }
+
 .main {
   font-family: 'Raleway', sans-serif;
 }
-.main>.section-title {
+.section-title {
   font-family: 'Anton', sans-serif;
   text-align: center;
   font-size: 36px;
@@ -71,13 +67,18 @@ a:hover {
 }
 .about {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.about-left {
-  flex-shrink: 0;
+.about>div {
+  padding: 0 10px;
 }
 .about-left img {
   width: 250px;
-  margin: 20px 20px 0 0;
+  margin: 20px 0 0 0;
+}
+.about-right {
+  max-width: 670px;
 }
 .portfolio {
   display: flex;
