@@ -88,6 +88,25 @@ a:hover {
 .about-right {
   max-width: 670px;
 }
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 14px;
+  color: #444;
+}
+.videos>div {
+  width: 300px;
+  margin: 10px 5px;
+}
+.videos>div iframe, .videos>div img, .videos>div .img {
+  width: 288px;
+  height: 172px;
+}
+.videos .video-title {
+  font-size: 16px;
+  color: darkorange;
+}
 .portfolio {
   max-width: 720px;
   margin: 0 auto;
